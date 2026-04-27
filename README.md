@@ -31,7 +31,7 @@
 <br/>
 
 ```
-🧠  850,000+ learners  ·  500+ resources  ·  6 roadmaps  ·  Updated monthly
+🧠  Worldwide learners  ·  500+ resources  ·  6 roadmaps  ·  Updated monthly
 ```
 
 </div>
