@@ -4,16 +4,16 @@
 
 <br/>
 
-<a href="https://github.com/codebeez/ai-magic-mastery/stargazers">
-  <img src="https://img.shields.io/github/stars/codebeez/ai-magic-mastery?style=for-the-badge&logo=github&color=7C3AED&labelColor=0d0f26&label=⭐%20Stars" alt="Stars"/>
+<a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/stargazers">
+  <img src="https://img.shields.io/github/stars/aredwan-xyz/ai-mastery-ultimate-resources?style=for-the-badge&logo=github&color=7C3AED&labelColor=0d0f26&label=⭐%20Stars" alt="Stars"/>
 </a>
-<a href="https://github.com/codebeez/ai-magic-mastery/network/members">
-  <img src="https://img.shields.io/github/forks/codebeez/ai-magic-mastery?style=for-the-badge&logo=github&color=06B6D4&labelColor=0d0f26&label=🍴%20Forks" alt="Forks"/>
+<a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/network/members">
+  <img src="https://img.shields.io/github/forks/aredwan-xyz/ai-mastery-ultimate-resources?style=for-the-badge&logo=github&color=06B6D4&labelColor=0d0f26&label=🍴%20Forks" alt="Forks"/>
 </a>
-<a href="https://github.com/codebeez/ai-magic-mastery/graphs/contributors">
-  <img src="https://img.shields.io/github/contributors/codebeez/ai-magic-mastery?style=for-the-badge&color=10B981&labelColor=0d0f26&label=👥%20Contributors" alt="Contributors"/>
+<a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/graphs/contributors">
+  <img src="https://img.shields.io/github/contributors/aredwan-xyz/ai-mastery-ultimate-resources?style=for-the-badge&color=10B981&labelColor=0d0f26&label=👥%20Contributors" alt="Contributors"/>
 </a>
-<a href="https://github.com/codebeez/ai-magic-mastery/blob/main/LICENSE">
+<a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge&labelColor=0d0f26" alt="License"/>
 </a>
 <img src="https://img.shields.io/badge/Last%20Updated-2025-EC4899?style=for-the-badge&labelColor=0d0f26" alt="Updated 2025"/>
@@ -22,7 +22,7 @@
 <br/><br/>
 
 > **The most comprehensive, up-to-date, and well-structured AI learning repository on GitHub.**
-> Curated by **[Abid Redwan](https://github.com/aredwan)** · Built by **[CodeBeez](https://codebeez.ai)**
+> Curated by **[Abid Redwan](https://github.com/aredwan-xyz)** · Built by **[CodeBeez](https://codebeez.ai)**
 
 <br/>
 
@@ -1087,14 +1087,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=codebeez/ai-magic-mastery&type=Date)](https://star-history.com/#codebeez/ai-magic-mastery&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=aredwan-xyz/ai-mastery-ultimate-resources&type=Date)](https://star-history.com/#aredwan-xyz/ai-mastery-ultimate-resources&Date)
 
 ---
 
 ## 🏆 Contributors
 
-<a href="https://github.com/codebeez/ai-magic-mastery/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=codebeez/ai-magic-mastery" />
+<a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aredwan-xyz/ai-mastery-ultimate-resources" />
 </a>
 
 ---
@@ -1124,7 +1124,7 @@ This repository is licensed under the [MIT License](LICENSE) — **use it freely
 
 <br/>
 
-Made with 🧠 + ❤️ by **[Abid Redwan](https://github.com/aredwan)** × **[CodeBeez](https://codebeez.ai)**
+Made with 🧠 + ❤️ by **[Abid Redwan](https://github.com/aredwan-xyz)** × **[CodeBeez](https://codebeez.ai)**
 
 <br/>
 
