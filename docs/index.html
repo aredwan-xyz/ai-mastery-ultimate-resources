@@ -3,12 +3,30 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="AI Magic Mastery — The most comprehensive open-source AI learning repository on GitHub. 6 career roadmaps, curated resources, cheatsheets, interview prep & 25+ projects. By Abid Redwan & CodeBeez."/>
-  <meta property="og:title" content="AI Magic Mastery — The Ultimate AI Learning Repo"/>
-  <meta property="og:description" content="Everything you need to master AI. Free. Open-source. Curated by Abid Redwan & CodeBeez."/>
+  <meta name="description" content="AI Magic Mastery — the most comprehensive open-source AI learning repository on GitHub. 6 career roadmaps, curated resources, cheatsheets, interview prep & 25+ projects. Free & open-source, by Abid Redwan & CodeBeez."/>
+  <meta name="keywords" content="AI, machine learning, deep learning, LLM, learn AI, AI roadmap, AI resources, prompt engineering, MLOps, AI agents, generative AI, free AI course, CodeBeez, Abid Redwan"/>
+  <meta name="author" content="Abid Redwan (CodeBeez)"/>
+  <meta name="theme-color" content="#7C3AED"/>
+  <link rel="canonical" href="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/"/>
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="AI Magic Mastery"/>
+  <meta property="og:url" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/"/>
+  <meta property="og:title" content="AI Magic Mastery — The Ultimate AI Learning Repository"/>
+  <meta property="og:description" content="Everything you need to master AI — 6 roadmaps, curated resources, cheatsheets & interview prep. Free & open-source, by CodeBeez × Abid Redwan."/>
+  <meta property="og:image" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/og-image.svg"/>
+  <meta property="og:image:type" content="image/svg+xml"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="AI Magic Mastery — the ultimate open-source AI learning repository"/>
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="AI Magic Mastery by CodeBeez × Abid Redwan"/>
+  <meta name="twitter:title" content="AI Magic Mastery — The Ultimate AI Learning Repository"/>
+  <meta name="twitter:description" content="Everything you need to master AI. Free. Open-source. By CodeBeez × Abid Redwan."/>
+  <meta name="twitter:image" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/og-image.svg"/>
+
   <title>AI Magic Mastery — The Ultimate AI Learning Repository</title>
 
   <!-- Fonts -->
@@ -388,7 +406,56 @@
       .cta-box{padding:44px 24px}
       .hero-stats{gap:16px}
     }
+    /* ── Respect reduced-motion preference (accessibility) ─ */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal, .reveal-l, .reveal-r { opacity: 1 !important; transform: none !important; }
+      #stars, .orb, .f-card { animation: none !important; }
+    }
   </style>
+
+  <!-- Structured data (JSON-LD) for SEO / rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "AI Magic Mastery",
+        "alternateName": "AI Mastery Ultimate Resources",
+        "url": "https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/",
+        "description": "The most comprehensive open-source AI learning repository — roadmaps, resources, cheatsheets, interview prep and projects.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Organization",
+        "name": "CodeBeez",
+        "url": "https://codebeez.ai",
+        "founder": { "@type": "Person", "name": "Abid Redwan" },
+        "sameAs": [
+          "https://github.com/aredwan-xyz/ai-mastery-ultimate-resources",
+          "https://x.com/codebeezai"
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "name": "AI Magic Mastery",
+        "learningResourceType": "Curriculum",
+        "educationalLevel": "Beginner to Advanced",
+        "teaches": ["Machine Learning","Deep Learning","Large Language Models","Prompt Engineering","AI Agents","MLOps","Generative AI","Computer Vision","NLP"],
+        "isAccessibleForFree": true,
+        "license": "https://opensource.org/licenses/MIT",
+        "author": { "@type": "Person", "name": "Abid Redwan" },
+        "provider": { "@type": "Organization", "name": "CodeBeez" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -413,7 +480,7 @@
     </ul>
     <div class="nav-actions">
       <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="gh-star btn btn-sm">
-        <span class="star-icon">★</span> Star on GitHub <span class="star-count">★ 0</span>
+        <span class="star-icon">★</span> Star on GitHub <span class="star-count" id="star-count">★</span>
       </a>
       <button class="nav-hb" id="hb" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
@@ -1235,6 +1302,21 @@ const sObs = new IntersectionObserver(entries=>{
   });
 },{threshold:.4});
 secEls.forEach(s=>sObs.observe(s));
+</script>
+
+<!-- Live GitHub star count (graceful — stays "★" if unavailable or zero) -->
+<script>
+(function(){
+  fetch('https://api.github.com/repos/aredwan-xyz/ai-mastery-ultimate-resources')
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(d){
+      if (d && typeof d.stargazers_count === 'number' && d.stargazers_count > 0) {
+        var el = document.getElementById('star-count');
+        if (el) el.textContent = '★ ' + d.stargazers_count.toLocaleString();
+      }
+    })
+    .catch(function(){});
+})();
 </script>
 
 </body>
