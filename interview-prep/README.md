@@ -9,10 +9,10 @@
 
 | Category | Questions | File |
 |----------|-----------|------|
-| 🧮 ML Theory & Statistics | 60 | [ml-theory.md](ml-theory.md) |
-| 🧠 Deep Learning & Transformers | 60 | [deep-learning.md](deep-learning.md) |
+| 🧮 ML Theory & Statistics | 60 | [ml-theory.md](ml-theory-questions.md) |
+| 🧠 Deep Learning & Transformers | 60 | [deep-learning.md](deep-learning-questions.md) |
 | 🤖 LLMs & Generative AI | 70 | [llm-questions.md](llm-questions.md) |
-| ⚙️ MLOps & Systems Design | 50 | [mlops-systems.md](mlops-systems.md) |
+| ⚙️ MLOps & Systems Design | 50 | [mlops-systems.md](mlops-questions.md) |
 | 💻 Coding Challenges | 60 | [coding-challenges.md](coding-challenges.md) |
 
 ---
@@ -157,7 +157,7 @@
 > - **MLE (Maximum Likelihood Estimation)**: Find parameters θ that maximize P(data|θ). No prior assumptions about θ. Can overfit with small data.
 > - **MAP (Maximum A Posteriori)**: Find θ that maximizes P(θ|data) = P(data|θ) × P(θ). Incorporates a prior P(θ). A Gaussian prior = L2 regularization. Laplace prior = L1 regularization. With uniform prior, MAP = MLE.
 
-**Q16–Q20**: [See full 60 questions →](ml-theory.md)
+**Q16–Q20**: [See full 60 questions →](ml-theory-questions.md)
 
 ---
 

@@ -1,0 +1,35 @@
+name: Link Checker
+
+# Validates that every relative/internal link in the repo's Markdown
+# resolves to a real file. Runs in OFFLINE mode, so it never hits the
+# network — no flaky failures from third-party sites, and it catches
+# dead internal links on every push and PR.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '0 6 * * 1'   # Weekly, Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: Check internal links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run lychee (offline)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --offline
+            --verbose
+            --no-progress
+            './**/*.md'
+          fail: true
