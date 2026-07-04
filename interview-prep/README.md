@@ -1,13 +1,13 @@
 # 🎯 AI/ML Interview Prep
-### 300+ Questions from Top AI Companies — AI Magic Mastery by CodeBeez × Abid Redwan
+### Real ML/AI Interview Questions with Full Answers — AI Magic Mastery by CodeBeez × Abid Redwan
 
-> Used by engineers who've landed roles at Google, Meta, OpenAI, Anthropic, Apple, Amazon, and top AI startups.
+> Modeled on the questions top AI companies actually ask — with clear, worked answers. A growing, open bank.
 
 ---
 
 ## 📋 Interview Categories
 
-| Category | Questions | File |
+| Category | Target | File |
 |----------|-----------|------|
 | 🧮 ML Theory & Statistics | 60 | [ml-theory.md](ml-theory-questions.md) |
 | 🧠 Deep Learning & Transformers | 60 | [deep-learning.md](deep-learning-questions.md) |

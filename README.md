@@ -50,12 +50,12 @@ This repository is the companion to the [AI Magic Mastery learning platform](htt
 |---------|---------|
 | 🗺️ **6 Career Roadmaps** | Beginner → Expert, ML Engineer, LLM Specialist, AI Researcher, Prompt Engineer, AI Agent Builder |
 | 📚 **500+ Curated Resources** | Best courses, papers, books, tools, YouTube channels — hand-picked, no fluff |
-| 💡 **200+ Project Ideas** | From beginner to advanced, with full implementation guides |
-| 🎯 **Interview Prep** | 300+ real ML/AI interview questions with answers |
+| 💡 **25+ Project Ideas** | From beginner to production, with tech stacks & starter hints |
+| 🎯 **Interview Prep** | ML/AI interview questions with clear, worked answers |
 | 📝 **Cheatsheets** | Quick-reference sheets for Python, PyTorch, TensorFlow, Prompting, LLMs |
 | 🔬 **Research Papers** | Most important AI papers with plain-English summaries |
 | 🛠️ **Tools Guide** | Every AI tool, framework, and platform you need to know |
-| 🤝 **Community** | Join 200,000+ AI learners in our Discord |
+| 🤝 **Community** | Join the AI Magic Mastery community on Discord |
 
 ---
 
@@ -839,7 +839,7 @@ Full project guides in [`projects/`](projects/)
 
 ## 🎯 Interview Prep
 
-> 300+ real questions from top AI companies. Full answers in [`interview-prep/`](interview-prep/)
+> Real interview questions with clear, worked answers. Browse [`interview-prep/`](interview-prep/)
 
 ### Question Categories
 
@@ -1108,7 +1108,7 @@ This repo is built with ❤️ by **Abid Redwan** and the **CodeBeez** team. A h
 - **Andrew Ng** for his tireless work in AI education
 - **fast.ai** for the top-down learning approach
 - Every **open-source contributor** who shared their knowledge freely
-- Our **850,000+ learners** who inspire us to keep building
+- Every **learner and contributor** who inspires us to keep building
 
 ---
 
@@ -1130,7 +1130,7 @@ Made with 🧠 + ❤️ by **[Abid Redwan](https://github.com/aredwan-xyz)** × 
 
 [![Website](https://img.shields.io/badge/🌐_Platform-aimagicmastery.codebeez.ai-7C3AED?style=for-the-badge&labelColor=0d0f26)](https://aimagicmastery.codebeez.ai)
 [![Twitter](https://img.shields.io/badge/𝕏_Twitter-@CodeBeezAI-06B6D4?style=for-the-badge&labelColor=0d0f26)](https://x.com/codebeezai)
-[![Discord](https://img.shields.io/badge/💬_Discord-Join_200K+-5865F2?style=for-the-badge&labelColor=0d0f26)](https://discord.gg/codebeez)
+[![Discord](https://img.shields.io/badge/💬_Discord-Join_Us-5865F2?style=for-the-badge&labelColor=0d0f26)](https://discord.gg/codebeez)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abid_Redwan-0A66C2?style=for-the-badge&labelColor=0d0f26)](https://linkedin.com/in/abidredwan)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
