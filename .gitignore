@@ -31,3 +31,7 @@ node_modules/
 .env
 .env.local
 *.key
+
+# Local-only
+docs/index-v1-backup.html
+.claude/

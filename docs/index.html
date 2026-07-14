@@ -1,1392 +1,941 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="AI Magic Mastery — the most comprehensive open-source AI learning repository on GitHub. 6 career roadmaps, curated resources, cheatsheets, interview prep & 25+ projects. Free & open-source, by Abid Redwan & CodeBeez."/>
-  <meta name="keywords" content="AI, machine learning, deep learning, LLM, learn AI, AI roadmap, AI resources, prompt engineering, MLOps, AI agents, generative AI, free AI course, CodeBeez, Abid Redwan"/>
-  <meta name="author" content="Abid Redwan (CodeBeez)"/>
-  <meta name="theme-color" content="#7C3AED"/>
-  <link rel="canonical" href="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="AI Magic Mastery — the open-source AI curriculum. 6 career roadmaps, curated resources, cheatsheets, interview prep & 25+ projects. Free forever, by Abid Redwan & CodeBeez."/>
+<meta name="keywords" content="AI, machine learning, deep learning, LLM, learn AI, AI roadmap, AI resources, prompt engineering, MLOps, AI agents, generative AI, free AI course, CodeBeez, Abid Redwan"/>
+<meta name="author" content="Abid Redwan (CodeBeez)"/>
+<meta name="theme-color" content="#7C3AED"/>
+<link rel="canonical" href="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/"/>
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="AI Magic Mastery"/>
-  <meta property="og:url" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/"/>
-  <meta property="og:title" content="AI Magic Mastery — The Ultimate AI Learning Repository"/>
-  <meta property="og:description" content="Everything you need to master AI — 6 roadmaps, curated resources, cheatsheets & interview prep. Free & open-source, by CodeBeez × Abid Redwan."/>
-  <meta property="og:image" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/og-image.png"/>
-  <meta property="og:image:type" content="image/png"/>
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-  <meta property="og:image:alt" content="AI Magic Mastery — the ultimate open-source AI learning repository"/>
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="AI Magic Mastery"/>
+<meta property="og:url" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/"/>
+<meta property="og:title" content="AI Magic Mastery — The Open-Source AI Curriculum"/>
+<meta property="og:description" content="6 career roadmaps, curated resources, cheatsheets & interview prep. Free & open-source, by CodeBeez × Abid Redwan."/>
+<meta property="og:image" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/og-image.png"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="AI Magic Mastery — the ultimate open-source AI learning repository"/>
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="AI Magic Mastery — The Ultimate AI Learning Repository"/>
-  <meta name="twitter:description" content="Everything you need to master AI. Free. Open-source. By CodeBeez × Abid Redwan."/>
-  <meta name="twitter:image" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/og-image.png"/>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="AI Magic Mastery — The Open-Source AI Curriculum"/>
+<meta name="twitter:description" content="Everything you need to master AI. Free. Open-source. By CodeBeez × Abid Redwan."/>
+<meta name="twitter:image" content="https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/og-image.png"/>
 
-  <title>AI Magic Mastery — The Ultimate AI Learning Repository</title>
+<title>AI Magic Mastery — The Open-Source AI Curriculum</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/png,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237C3AED'/><text y='24' x='4' font-size='22'>🧠</text></svg>"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237C3AED'/><text y='24' x='4' font-size='22'>🧠</text></svg>"/>
 
-  <style>
-    /* ═══════════════════════════════════════════════════
-       DESIGN TOKENS
-    ═══════════════════════════════════════════════════ */
-    :root {
-      --bg:          #07060f;
-      --bg-2:        #0c0a1d;
-      --bg-card:     #121228;
-      --bg-card-2:   #171a35;
-      --bg-glass:    rgba(18,18,40,0.75);
-
-      --purple:      #7C3AED;
-      --purple-l:    #A78BFA;
-      --purple-d:    #4C1D95;
-      --cyan:        #06B6D4;
-      --cyan-l:      #67E8F9;
-      --green:       #10B981;
-      --green-l:     #34D399;
-      --orange:      #F97316;
-      --pink:        #EC4899;
-      --yellow:      #F59E0B;
-
-      --g-main:   linear-gradient(135deg,#7C3AED,#06B6D4);
-      --g-text:   linear-gradient(135deg,#A78BFA 0%,#67E8F9 100%);
-      --g-green:  linear-gradient(135deg,#10B981,#06B6D4);
-      --g-orange: linear-gradient(135deg,#F97316,#FBBF24);
-      --g-pink:   linear-gradient(135deg,#EC4899,#A78BFA);
-      --g-fire:   linear-gradient(135deg,#F97316,#EC4899,#A78BFA);
-
-      --text:     #F5F6FA;
-      --text-2:   #99A2C0;
-      --text-3:   #565E80;
-      --border:   rgba(139,92,246,0.22);
-      --border-l: rgba(255,255,255,0.06);
-      --border-hover: rgba(167,139,250,0.4);
-
-      /* Elevation scale — layered ambient + direct shadow for real depth */
-      --shadow-sm: 0 1px 2px rgba(0,0,0,.4), 0 2px 8px rgba(0,0,0,.28);
-      --shadow:    0 2px 6px rgba(0,0,0,.35), 0 12px 32px rgba(2,2,10,.45);
-      --shadow-lg: 0 8px 16px rgba(2,2,10,.4), 0 30px 70px rgba(2,2,10,.55);
-      --glow-p:    0 0 0 1px rgba(124,58,237,.15), 0 0 56px rgba(124,58,237,.32);
-      --glow-c:    0 0 0 1px rgba(6,182,212,.12), 0 0 56px rgba(6,182,212,.22);
-
-      --font-h: 'Sora', sans-serif;
-      --font-b: 'Inter', sans-serif;
-      --font-m: 'JetBrains Mono', monospace;
-
-      --r-sm: 8px; --r-md: 14px; --r-lg: 20px; --r-xl: 28px; --r-full: 9999px;
-      --ease-bounce: cubic-bezier(.34,1.56,.64,1);
-      --ease-smooth: cubic-bezier(.16,1,.3,1);
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "AI Magic Mastery",
+      "alternateName": "AI Mastery Ultimate Resources",
+      "url": "https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/",
+      "description": "The open-source AI curriculum — roadmaps, resources, cheatsheets, interview prep and projects.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "name": "CodeBeez",
+      "url": "https://codebeez.ai",
+      "founder": { "@type": "Person", "name": "Abid Redwan" },
+      "sameAs": [
+        "https://github.com/aredwan-xyz/ai-mastery-ultimate-resources",
+        "https://x.com/codebeezai"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "name": "AI Magic Mastery",
+      "learningResourceType": "Curriculum",
+      "educationalLevel": "Beginner to Advanced",
+      "teaches": ["Machine Learning","Deep Learning","Large Language Models","Prompt Engineering","AI Agents","MLOps","Generative AI","Computer Vision","NLP"],
+      "isAccessibleForFree": true,
+      "license": "https://opensource.org/licenses/MIT",
+      "author": { "@type": "Person", "name": "Abid Redwan" },
+      "provider": { "@type": "Organization", "name": "CodeBeez" }
     }
+  ]
+}
+</script>
 
-    /* ═══════════════════════════════════════════════════
-       RESET & BASE
-    ═══════════════════════════════════════════════════ */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;font-size:16px}
-    body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;position:relative}
-    a{text-decoration:none;color:inherit;transition:all .25s}
-    ul{list-style:none}
-    img{max-width:100%;display:block}
-    button{cursor:pointer;border:none;outline:none;font-family:var(--font-b);background:none;color:inherit}
-    ::-webkit-scrollbar{width:5px}
+<style>
+/* ═══════════════════════════════════════════════════════
+   AI MAGIC MASTERY · SITE v2 — "Aurora Editorial"
+═══════════════════════════════════════════════════════ */
+:root{
+  --bg:        #060510;
+  --bg-2:      #0b0920;
+  --card:      #100f26;
+  --card-2:    #161637;
+  --ink:       #F6F6FB;
+  --ink-2:     #9CA3C4;
+  --ink-3:     #575E84;
 
-    /* Subtle film-grain — the difference between "template" and "crafted" */
-    body::after{
-      content:'';
-      position:fixed; inset:0; z-index:2;
-      pointer-events:none;
-      opacity:.035;
-      mix-blend-mode:overlay;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    }
+  --violet:    #7C3AED;
+  --violet-l:  #A78BFA;
+  --cyan:      #06B6D4;
+  --cyan-l:    #67E8F9;
+  --mint:      #34D399;
+  --amber:     #FBBF24;
+  --rose:      #FB7185;
 
-    /* Accessible, on-brand focus states (keyboard nav only, never mouse clutter) */
-    a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
-      outline:2px solid var(--purple-l);
-      outline-offset:3px;
-      border-radius:4px;
-    }
-    ::-webkit-scrollbar-track{background:var(--bg-2)}
-    ::-webkit-scrollbar-thumb{background:var(--purple);border-radius:9px}
+  --g-brand:   linear-gradient(120deg,#7C3AED,#06B6D4);
+  --g-ink:     linear-gradient(120deg,#A78BFA 0%,#67E8F9 100%);
+  --g-warm:    linear-gradient(120deg,#FB7185,#FBBF24);
+  --g-mint:    linear-gradient(120deg,#34D399,#67E8F9);
+  --g-aurora:  linear-gradient(115deg,#7C3AED 0%,#06B6D4 40%,#34D399 70%,#A78BFA 100%);
 
-    /* ═══════════════════════════════════════════════════
-       UTILITIES
-    ═══════════════════════════════════════════════════ */
-    .container{max-width:1240px;margin:0 auto;padding:0 24px}
-    .gt{background:var(--g-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .go{background:var(--g-orange);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .gp{background:var(--g-pink);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .gg{background:var(--g-green);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .sec-tag{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
-    .sec-tag::before{content:'';width:22px;height:2px;background:var(--g-main);border-radius:2px}
-    .sec-title{font-family:var(--font-h);font-size:clamp(1.9rem,3.8vw,3rem);font-weight:800;line-height:1.12;margin-bottom:16px}
-    .sec-sub{font-size:1.05rem;color:var(--text-2);max-width:580px;line-height:1.75}
-    .tc{text-align:center}.tc .sec-sub{margin:0 auto}
-    .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
-    .reveal.on{opacity:1;transform:none}
-    .reveal-l{opacity:0;transform:translateX(-36px);transition:opacity .7s ease,transform .7s ease}
-    .reveal-l.on{opacity:1;transform:none}
-    .reveal-r{opacity:0;transform:translateX(36px);transition:opacity .7s ease,transform .7s ease}
-    .reveal-r.on{opacity:1;transform:none}
+  --line:      rgba(255,255,255,.07);
+  --line-vio:  rgba(139,92,246,.25);
+  --line-hot:  rgba(167,139,250,.45);
 
-    /* ═══════════════════════════════════════════════════
-       BUTTONS
-    ═══════════════════════════════════════════════════ */
-    .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:var(--r-full);font-size:.9375rem;font-weight:700;letter-spacing:-.005em;transition:all .35s var(--ease-bounce);white-space:nowrap;position:relative}
-    .btn-p{background:var(--g-main);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.22), 0 4px 14px rgba(124,58,237,.35), 0 1px 28px rgba(6,182,212,.18)}
-    .btn-p:hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 8px 22px rgba(124,58,237,.5), 0 2px 40px rgba(6,182,212,.28)}
-    .btn-p:active{transform:translateY(-1px)}
-    .btn-o{background:rgba(255,255,255,.02);color:var(--text);border:1.5px solid var(--border);backdrop-filter:blur(10px)}
-    .btn-o:hover{border-color:var(--border-hover);background:rgba(124,58,237,.1);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
-    .btn-g{background:linear-gradient(135deg,rgba(124,58,237,.14),rgba(6,182,212,.09));border:1.5px solid var(--border);color:var(--text)}
-    .btn-g:hover{background:rgba(124,58,237,.2);border-color:var(--border-hover);transform:translateY(-2px)}
-    .btn-sm{padding:10px 20px;font-size:.875rem}
-    .btn-lg{padding:18px 38px;font-size:1.0625rem}
+  --sh-1: 0 1px 2px rgba(0,0,0,.45), 0 3px 10px rgba(0,0,0,.3);
+  --sh-2: 0 2px 8px rgba(0,0,0,.4), 0 14px 38px rgba(1,1,8,.5);
+  --sh-3: 0 10px 20px rgba(1,1,8,.42), 0 34px 80px rgba(1,1,8,.6);
+  --glow: 0 0 0 1px rgba(124,58,237,.16), 0 0 60px rgba(124,58,237,.32);
 
-    /* ═══════════════════════════════════════════════════
-       NAVBAR
-    ═══════════════════════════════════════════════════ */
-    .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:all .3s}
-    .nav.scroll{background:rgba(6,7,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-l);padding:10px 0}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--font-h);font-weight:800;font-size:1.125rem}
-    .logo-orb{width:36px;height:36px;background:var(--g-main);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 4px 16px rgba(124,58,237,.4)}
-    .logo-sub{font-size:.62rem;font-weight:500;color:var(--text-2);display:block;line-height:1}
-    .nav-links{display:flex;align-items:center;gap:4px}
-    .nav-links a{padding:8px 13px;border-radius:var(--r-sm);font-size:.875rem;font-weight:500;color:var(--text-2)}
-    .nav-links a:hover{color:var(--text);background:rgba(255,255,255,.05)}
-    .nav-actions{display:flex;gap:10px;align-items:center}
-    .nav-hb{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
-    .nav-hb span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
-    .mob-menu{position:fixed;top:62px;left:0;right:0;z-index:999;background:rgba(6,7,15,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-l);padding:18px 24px;display:none;flex-direction:column;gap:8px}
-    .mob-menu.open{display:flex}
-    .mob-menu a{padding:12px 16px;border-radius:var(--r-sm);font-weight:500;color:var(--text-2)}
-    .mob-menu a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+  --f-head: 'Sora', sans-serif;
+  --f-body: 'Inter', sans-serif;
+  --f-mono: 'JetBrains Mono', monospace;
 
-    /* ═══════════════════════════════════════════════════
-       HERO
-    ═══════════════════════════════════════════════════ */
-    .hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden}
-    .hero-bg{position:absolute;inset:0;background:
-      radial-gradient(ellipse 80% 60% at 50% -10%,rgba(124,58,237,.22) 0%,transparent 70%),
-      radial-gradient(ellipse 50% 40% at 85% 60%,rgba(6,182,212,.1) 0%,transparent 60%),
-      radial-gradient(ellipse 40% 35% at 10% 80%,rgba(236,72,153,.07) 0%,transparent 55%)}
-    .hero-grid{position:absolute;inset:0;
-      background-image:linear-gradient(rgba(124,58,237,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(124,58,237,.045) 1px,transparent 1px);
-      background-size:52px 52px;
-      mask-image:radial-gradient(ellipse 90% 70% at 50% 0%,black 0%,transparent 75%)}
-    canvas#stars{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.5}
-    .hero-wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-    .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.25);padding:7px 16px;border-radius:var(--r-full);font-size:.8rem;font-weight:700;color:var(--purple-l);margin-bottom:22px}
-    .hero-eyebrow .dot{width:7px;height:7px;background:var(--green-l);border-radius:50%;animation:blink 1.6s ease-in-out infinite}
-    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
-    .hero-title{font-family:var(--font-h);font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;line-height:1.06;margin-bottom:22px}
-    .hero-sub{font-size:1.1rem;color:var(--text-2);line-height:1.78;margin-bottom:36px;max-width:510px}
-    .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
-    .hero-stats{display:flex;gap:28px;flex-wrap:wrap}
-    .hs-num{font-family:var(--font-h);font-size:1.625rem;font-weight:800;display:block;line-height:1}
-    .hs-lbl{font-size:.8rem;color:var(--text-3)}
+  --r1: 10px; --r2: 16px; --r3: 22px; --r4: 30px; --pill: 999px;
+  --spring: cubic-bezier(.34,1.56,.64,1);
+  --silk:   cubic-bezier(.16,1,.3,1);
+}
 
-    /* GitHub star button */
-    .gh-star{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:var(--r-full);background:rgba(255,255,255,.06);border:1.5px solid var(--border-l);font-size:.875rem;font-weight:600;color:var(--text);transition:all .3s}
-    .gh-star:hover{background:rgba(124,58,237,.14);border-color:var(--border);transform:translateY(-2px)}
-    .gh-star .star-icon{color:var(--yellow);font-size:1rem}
-    .star-count{background:rgba(124,58,237,.2);color:var(--purple-l);padding:2px 8px;border-radius:var(--r-full);font-size:.75rem;font-weight:700}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--f-body);background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;transition:all .25s}
+ul,ol{list-style:none}
+img{max-width:100%;display:block}
+button,input{font-family:var(--f-body);color:inherit;background:none;border:none;outline:none}
+button{cursor:pointer}
+::selection{background:rgba(124,58,237,.45);color:#fff}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg-2)}
+::-webkit-scrollbar-thumb{background:var(--violet);border-radius:9px}
 
-    /* Hero right — repo preview */
-    .repo-preview{position:relative}
-    .repo-card{background:var(--bg-card);border:1px solid var(--border-l);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-lg),0 0 80px rgba(124,58,237,.12);transition:transform .5s var(--ease-smooth),box-shadow .5s}
-    .repo-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg),0 0 100px rgba(124,58,237,.2)}
-    .repo-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--g-main)}
-    .repo-topbar{display:flex;align-items:center;gap:8px;padding:14px 18px;background:rgba(255,255,255,.025);border-bottom:1px solid var(--border-l)}
-    .repo-dot{width:12px;height:12px;border-radius:50%}
-    .repo-title{margin:0 auto;font-size:.75rem;color:var(--text-3);font-family:var(--font-m)}
-    .repo-body{padding:20px}
-    .repo-item{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:var(--r-sm);font-size:.875rem;color:var(--text-2);transition:.25s}
-    .repo-item:hover{background:rgba(124,58,237,.08);color:var(--text)}
-    .repo-item .ico{font-size:1.1rem;width:28px;flex-shrink:0;text-align:center}
-    .repo-item .name{flex:1;font-family:var(--font-m);font-size:.8125rem}
-    .repo-item .pill{font-size:.7rem;padding:2px 8px;border-radius:var(--r-full);font-weight:600}
-    .pill-p{background:rgba(124,58,237,.15);color:var(--purple-l)}
-    .pill-c{background:rgba(6,182,212,.12);color:var(--cyan-l)}
-    .pill-g{background:rgba(16,185,129,.12);color:var(--green-l)}
-    .pill-o{background:rgba(249,115,22,.12);color:#FDBA74}
-    .repo-divider{height:1px;background:var(--border-l);margin:10px 0}
-    .repo-footer{display:flex;align-items:center;gap:8px;padding:12px 12px 4px;font-size:.8rem;color:var(--text-3)}
-    .commit-dot{width:8px;height:8px;background:var(--green-l);border-radius:50%}
+/* film grain */
+body::after{content:'';position:fixed;inset:0;z-index:3;pointer-events:none;opacity:.032;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
-    /* Float cards */
-    .f-card{position:absolute;background:var(--bg-card-2);border:1px solid var(--border-l);border-radius:var(--r-md);padding:12px 16px;box-shadow:var(--shadow-lg);backdrop-filter:blur(20px);font-size:.8125rem;animation:flt 4.5s ease-in-out infinite;z-index:3}
-    .f-card:nth-child(2){animation-delay:-1.5s}.f-card:nth-child(3){animation-delay:-3s}
-    @keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-    /* Anchored fully outside the repo card's box on both axes — never overlaps its content */
-    .fc-top{top:-28px;right:-30px;display:flex;align-items:center;gap:10px}
-    .fc-btm{bottom:-34px;left:-26px;display:flex;align-items:center;gap:10px}
-    .fc-avt{width:34px;height:34px;border-radius:50%;background:var(--g-main);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
-    .fc-txt strong{display:block;font-weight:700;font-size:.8125rem;line-height:1.3}
-    .fc-txt span{font-size:.73rem;color:var(--text-2)}
-    .stars-row{display:flex;gap:2px;margin-top:2px}
-    .stars-row span{color:var(--yellow);font-size:.7rem}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--violet-l);outline-offset:3px;border-radius:4px}
 
-    /* ═══════════════════════════════════════════════════
-       TRUST BAR
-    ═══════════════════════════════════════════════════ */
-    .trust{padding:44px 0;border-top:1px solid var(--border-l);border-bottom:1px solid var(--border-l)}
-    .trust-lbl{text-align:center;font-size:.78rem;color:var(--text-3);text-transform:uppercase;letter-spacing:.12em;font-weight:600;margin-bottom:24px}
-    .trust-logos{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;align-items:center}
-    .tlogo{display:flex;align-items:center;gap:7px;padding:9px 18px;background:rgba(255,255,255,.03);border:1px solid var(--border-l);border-radius:var(--r-sm);font-size:.875rem;font-weight:600;color:var(--text-2);transition:all .3s}
-    .tlogo:hover{color:var(--text);border-color:var(--border-hover);background:rgba(124,58,237,.06);transform:translateY(-1px)}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .rv{opacity:1!important;transform:none!important}
+  .marquee-track{animation:none!important}
+}
 
-    /* ═══════════════════════════════════════════════════
-       STATS
-    ═══════════════════════════════════════════════════ */
-    .stats{padding:80px 0}
-    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-    .stat-card{background:var(--bg-card);border:1px solid var(--border-l);border-radius:var(--r-lg);padding:30px 24px;text-align:center;transition:all .35s;position:relative;overflow:hidden;cursor:default}
-    .stat-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(124,58,237,.1),rgba(6,182,212,.07));opacity:0;transition:.35s}
-    .stat-card:hover{border-color:var(--border-hover);transform:translateY(-5px);box-shadow:var(--glow-p)}
-    .stat-card:hover::before{opacity:1}
-    .stat-ico{width:54px;height:54px;border-radius:14px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem}
-    .stat-n{font-family:var(--font-h);font-size:2.4rem;font-weight:900;line-height:1;margin-bottom:6px}
-    .stat-l{font-size:.875rem;color:var(--text-2)}
+/* ── layout utils ── */
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.gi{background:var(--g-ink);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gw{background:var(--g-warm);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gm{background:var(--g-mint);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan-l);margin-bottom:16px}
+.kicker::before{content:'';width:26px;height:2px;background:var(--g-brand);border-radius:2px}
+.h2{font-family:var(--f-head);font-size:clamp(1.9rem,4vw,3.1rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+.lede{font-size:1.06rem;color:var(--ink-2);max-width:600px;line-height:1.75}
+.center{text-align:center}.center .lede{margin:0 auto}
+.sect{padding:104px 0}
+.shead{margin-bottom:56px}
+.shead.center{display:flex;flex-direction:column;align-items:center}
 
-    /* ═══════════════════════════════════════════════════
-       SECTION COMMON
-    ═══════════════════════════════════════════════════ */
-    .section{padding:96px 0}
-    .sec-hd{margin-bottom:52px}
-    .sec-hd.tc{display:flex;flex-direction:column;align-items:center}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s var(--silk),transform .7s var(--silk)}
+.rv.go{opacity:1;transform:none}
 
-    /* ═══════════════════════════════════════════════════
-       ROADMAPS
-    ═══════════════════════════════════════════════════ */
-    .roads-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .road-card{background:var(--bg-card);border:1px solid var(--border-l);border-radius:var(--r-lg);padding:28px;transition:all .4s var(--ease-bounce);cursor:pointer;position:relative;overflow:hidden}
-    .road-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;transform:scaleX(0);transform-origin:left;transition:.35s}
-    .road-card:hover{transform:translateY(-7px);border-color:var(--border-hover);box-shadow:var(--shadow-lg)}
-    .road-card:hover::after{transform:scaleX(1)}
-    .rc-1::after{background:var(--g-green)} .rc-2::after{background:var(--g-main)} .rc-3::after{background:var(--g-orange)}
-    .rc-4::after{background:var(--g-pink)} .rc-5::after{background:var(--g-text)} .rc-6::after{background:var(--g-fire)}
-    .road-ico{width:50px;height:50px;border-radius:13px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;font-size:1.4rem}
-    .road-level{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
-    .road-title{font-family:var(--font-h);font-size:1.05rem;font-weight:700;margin-bottom:10px}
-    .road-desc{font-size:.85rem;color:var(--text-2);line-height:1.65;margin-bottom:18px}
-    .road-meta{display:flex;gap:14px;font-size:.78rem;color:var(--text-3)}
+/* ── buttons ── */
+.bt{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:var(--pill);font-size:.9375rem;font-weight:700;letter-spacing:-.005em;transition:all .35s var(--spring);white-space:nowrap;position:relative}
+.bt-hero{background:var(--g-brand);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.24),0 4px 16px rgba(124,58,237,.36),0 1px 32px rgba(6,182,212,.2)}
+.bt-hero:hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 9px 26px rgba(124,58,237,.5),0 2px 44px rgba(6,182,212,.3)}
+.bt-hero:active{transform:translateY(-1px) scale(.98)}
+.bt-ghost{background:rgba(255,255,255,.025);border:1.5px solid var(--line-vio);color:var(--ink);backdrop-filter:blur(10px)}
+.bt-ghost:hover{border-color:var(--line-hot);background:rgba(124,58,237,.1);transform:translateY(-2px);box-shadow:var(--sh-1)}
+.bt-lg{padding:18px 36px;font-size:1.05rem}
+.bt-sm{padding:10px 20px;font-size:.86rem}
 
-    /* ═══════════════════════════════════════════════════
-       CONTENT GRID (cheatsheets, resources)
-    ═══════════════════════════════════════════════════ */
-    .content-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .content-card{background:var(--bg-card);border:1px solid var(--border-l);border-radius:var(--r-lg);padding:24px;transition:all .35s;cursor:pointer}
-    .content-card:hover{border-color:var(--border-hover);transform:translateY(-5px);box-shadow:var(--shadow)}
-    .cc-ico{font-size:2rem;margin-bottom:14px}
-    .cc-title{font-family:var(--font-h);font-size:.9375rem;font-weight:700;margin-bottom:8px}
-    .cc-desc{font-size:.8275rem;color:var(--text-2);line-height:1.6}
-    .cc-tag{display:inline-flex;align-items:center;gap:5px;margin-top:14px;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:var(--r-full);background:rgba(124,58,237,.12);color:var(--purple-l)}
+/* ── scroll progress ── */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--g-aurora);z-index:2000;transition:width .1s linear;border-radius:0 3px 3px 0}
 
-    /* ═══════════════════════════════════════════════════
-       TERMINAL / CODE DEMO
-    ═══════════════════════════════════════════════════ */
-    .demo-section{padding:96px 0;background:linear-gradient(180deg,var(--bg-2) 0%,var(--bg) 100%)}
-    .demo-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-    .terminal{background:#07071a;border:1px solid rgba(124,58,237,.22);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg),0 0 70px rgba(124,58,237,.14)}
-    .term-bar{display:flex;align-items:center;gap:6px;padding:12px 16px;background:rgba(255,255,255,.025);border-bottom:1px solid rgba(255,255,255,.045)}
-    .td{width:12px;height:12px;border-radius:50%}
-    .term-title{margin:0 auto;font-size:.72rem;color:var(--text-3);font-family:var(--font-m)}
-    .term-body{padding:20px;font-family:var(--font-m);font-size:.8375rem;line-height:1.85;min-height:280px;overflow:hidden}
-    .tc-cmt{color:#3d4a5c}.tc-kw{color:#A78BFA}.tc-str{color:#67E8F9}.tc-fn{color:#F9A8D4}.tc-num{color:#FCD34D}.tc-out{color:#34D399}.tc-cursor{display:inline-block;width:8px;height:14px;background:var(--purple-l);animation:cblink 1s step-end infinite;vertical-align:-2px}
-    @keyframes cblink{0%,100%{opacity:1}50%{opacity:0}}
-    .demo-pts{display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
-    .demo-pt{display:flex;align-items:flex-start;gap:12px;font-size:.9375rem}
-    .demo-pt .ck{color:var(--green-l);font-size:1.1rem;flex-shrink:0;margin-top:1px}
-    .demo-pt span{color:var(--text-2)}
+/* ── nav ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:all .3s}
+.nav.on{background:rgba(6,5,16,.9);backdrop-filter:blur(22px);border-bottom:1px solid var(--line);padding:10px 0}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--f-head);font-weight:800;font-size:1.1rem}
+.brand-orb{width:37px;height:37px;background:var(--g-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;box-shadow:0 4px 18px rgba(124,58,237,.45)}
+.brand-sub{font-size:.6rem;font-weight:500;color:var(--ink-2);display:block;line-height:1.2}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{padding:8px 13px;border-radius:var(--r1);font-size:.875rem;font-weight:500;color:var(--ink-2)}
+.nav-links a:hover,.nav-links a.live{color:var(--ink);background:rgba(255,255,255,.05)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.star-pill{display:inline-flex;align-items:center;gap:8px;padding:9px 17px;border-radius:var(--pill);background:rgba(255,255,255,.05);border:1.5px solid var(--line);font-size:.86rem;font-weight:700;transition:all .3s}
+.star-pill:hover{background:rgba(124,58,237,.14);border-color:var(--line-vio);transform:translateY(-2px)}
+.star-pill .ic{color:var(--amber)}
+.star-n{background:rgba(124,58,237,.22);color:var(--violet-l);padding:2px 9px;border-radius:var(--pill);font-size:.74rem;font-weight:800}
+.burger{display:none;flex-direction:column;gap:5px;padding:8px}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
+.sheet{position:fixed;top:60px;left:0;right:0;z-index:999;background:rgba(6,5,16,.97);backdrop-filter:blur(22px);border-bottom:1px solid var(--line);padding:18px 24px;display:none;flex-direction:column;gap:6px}
+.sheet.open{display:flex}
+.sheet a{padding:12px 16px;border-radius:var(--r1);font-weight:500;color:var(--ink-2)}
+.sheet a:hover{color:var(--ink);background:rgba(255,255,255,.05)}
 
-    /* ═══════════════════════════════════════════════════
-       PROJECTS
-    ═══════════════════════════════════════════════════ */
-    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .proj-card{background:var(--bg-card);border:1px solid var(--border-l);border-radius:var(--r-lg);padding:24px;transition:all .35s;position:relative;overflow:hidden}
-    .proj-card:hover{border-color:var(--border-hover);transform:translateY(-5px);box-shadow:var(--shadow)}
-    .proj-card::before{content:'';position:absolute;inset:0;opacity:0;transition:.35s}
-    .proj-card:hover::before{opacity:1}
-    .pj-1::before{background:linear-gradient(135deg,rgba(16,185,129,.07),transparent)}
-    .pj-2::before{background:linear-gradient(135deg,rgba(124,58,237,.07),transparent)}
-    .pj-3::before{background:linear-gradient(135deg,rgba(249,115,22,.07),transparent)}
-    .pj-4::before{background:linear-gradient(135deg,rgba(236,72,153,.07),transparent)}
-    .pj-5::before{background:linear-gradient(135deg,rgba(6,182,212,.07),transparent)}
-    .pj-6::before{background:linear-gradient(135deg,rgba(167,139,250,.07),transparent)}
-    .proj-lvl{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
-    .proj-title{font-family:var(--font-h);font-weight:700;font-size:1rem;margin-bottom:8px}
-    .proj-desc{font-size:.845rem;color:var(--text-2);line-height:1.6;margin-bottom:14px}
-    .proj-stack{display:flex;flex-wrap:wrap;gap:6px}
-    .tech-tag{font-size:.72rem;padding:3px 9px;border-radius:var(--r-full);background:rgba(255,255,255,.05);color:var(--text-3);border:1px solid var(--border-l)}
+/* ── hero ── */
+.hero{min-height:100vh;display:flex;align-items:center;padding:150px 0 90px;position:relative;overflow:hidden}
+.aurora{position:absolute;inset:-20% -10%;z-index:0;filter:blur(90px);opacity:.55;
+  background:
+    radial-gradient(38% 34% at 22% 18%, rgba(124,58,237,.5) 0%, transparent 100%),
+    radial-gradient(30% 30% at 78% 12%, rgba(6,182,212,.34) 0%, transparent 100%),
+    radial-gradient(26% 28% at 62% 78%, rgba(52,211,153,.16) 0%, transparent 100%),
+    radial-gradient(24% 26% at 12% 82%, rgba(251,113,133,.14) 0%, transparent 100%);
+  animation:auroraShift 18s ease-in-out infinite alternate}
+@keyframes auroraShift{from{transform:translate3d(0,0,0) rotate(0deg) scale(1)}to{transform:translate3d(3%,-4%,0) rotate(4deg) scale(1.08)}}
+.hero-grid-bg{position:absolute;inset:0;z-index:0;
+  background-image:linear-gradient(rgba(139,92,246,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,.05) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse 85% 65% at 50% 8%,black 0%,transparent 78%)}
+.hero-in{position:relative;z-index:1;text-align:center;max-width:900px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.28);padding:8px 18px;border-radius:var(--pill);font-size:.8rem;font-weight:700;color:var(--violet-l);margin-bottom:28px}
+.hero-badge .pulse{width:7px;height:7px;background:var(--mint);border-radius:50%;animation:pulse 1.7s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(52,211,153,.5)}50%{opacity:.4;box-shadow:0 0 0 6px rgba(52,211,153,0)}}
+.hero-h1{font-family:var(--f-head);font-size:clamp(2.7rem,6.4vw,5rem);font-weight:900;line-height:1.03;letter-spacing:-.028em;margin-bottom:26px}
+.hero-h1 .shimmer{background:var(--g-aurora);background-size:220% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5.5s linear infinite}
+@keyframes shimmer{to{background-position:220% center}}
+.hero-p{font-size:1.15rem;color:var(--ink-2);line-height:1.8;max-width:620px;margin:0 auto 38px}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
 
-    /* ═══════════════════════════════════════════════════
-       INTERVIEW PREP TICKER
-    ═══════════════════════════════════════════════════ */
-    .ticker-section{padding:96px 0}
-    .ticker-wrap{position:relative;overflow:hidden;border:1px solid var(--border-l);border-radius:var(--r-lg);background:var(--bg-card)}
-    .ticker-head{padding:24px 28px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border-l)}
-    .ticker-head h3{font-family:var(--font-h);font-weight:700;font-size:1.0625rem}
-    .ticker-count{margin-left:auto;font-size:.8125rem;color:var(--purple-l);font-weight:600}
-    .questions-list{padding:12px 0}
-    .q-item{display:flex;align-items:center;gap:14px;padding:14px 28px;border-bottom:1px solid var(--border-l);transition:.25s}
-    .q-item:last-child{border-bottom:none}
-    .q-item:hover{background:rgba(124,58,237,.06)}
-    .q-cat{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:var(--r-full);flex-shrink:0;min-width:90px;text-align:center}
-    .q-text{font-size:.9rem;color:var(--text-2);flex:1}
-    .q-diff{font-size:.72rem;font-weight:600;flex-shrink:0}
-    .diff-e{color:var(--green-l)}.diff-m{color:var(--yellow)}.diff-h{color:#F97316}
+/* clone bar */
+.clone{display:inline-flex;align-items:center;gap:0;background:#0a0918;border:1px solid var(--line-vio);border-radius:var(--r2);overflow:hidden;font-family:var(--f-mono);font-size:.8rem;box-shadow:var(--sh-1);margin-bottom:46px;max-width:100%}
+.clone-cmd{padding:13px 18px;color:var(--ink-2);white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.clone-cmd::-webkit-scrollbar{display:none}
+.clone-cmd .p{color:var(--mint)}
+.clone-btn{padding:13px 16px;border-left:1px solid var(--line);color:var(--violet-l);font-weight:700;font-family:var(--f-body);font-size:.8rem;flex-shrink:0;transition:.25s;display:flex;align-items:center;gap:6px}
+.clone-btn:hover{background:rgba(124,58,237,.15)}
 
-    /* ═══════════════════════════════════════════════════
-       CONTRIBUTORS / COMMUNITY
-    ═══════════════════════════════════════════════════ */
-    .community-section{padding:96px 0;position:relative;overflow:hidden}
-    .community-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(124,58,237,.06) 0%,transparent 70%);pointer-events:none}
-    .contrib-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-bottom:40px}
-    .contrib-card{background:var(--bg-card);border:1px solid var(--border-l);border-radius:var(--r-lg);padding:20px 14px;text-align:center;transition:all .35s var(--ease-bounce)}
-    .contrib-card:hover{transform:translateY(-6px);border-color:var(--border-hover);box-shadow:var(--shadow)}
-    .contrib-av{width:56px;height:56px;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;border:2.5px solid transparent;background:var(--bg-card);background-clip:padding-box;position:relative}
-    .contrib-av::before{content:'';position:absolute;inset:-2.5px;border-radius:50%;z-index:-1;background:var(--g-main)}
-    .contrib-name{font-weight:700;font-size:.875rem;margin-bottom:3px}
-    .contrib-role{font-size:.75rem;color:var(--text-3)}
-    .contrib-prs{font-size:.72rem;color:var(--purple-l);font-weight:600;margin-top:6px}
+/* hero stat strip */
+.stat-strip{display:flex;justify-content:center;gap:0;flex-wrap:wrap;border:1px solid var(--line);border-radius:var(--r3);overflow:hidden;background:rgba(16,15,38,.55);backdrop-filter:blur(14px);box-shadow:var(--sh-2)}
+.ss-item{padding:22px 40px;text-align:center;border-right:1px solid var(--line);flex:1;min-width:150px;transition:background .3s}
+.ss-item:last-child{border-right:none}
+.ss-item:hover{background:rgba(124,58,237,.07)}
+.ss-n{font-family:var(--f-head);font-size:1.9rem;font-weight:900;line-height:1.1;display:block}
+.ss-l{font-size:.78rem;color:var(--ink-3);font-weight:600}
 
-    /* ═══════════════════════════════════════════════════
-       CTA SECTION
-    ═══════════════════════════════════════════════════ */
-    .cta-section{padding:80px 0}
-    .cta-box{background:linear-gradient(180deg,var(--bg-card-2) 0%,var(--bg-card) 100%);border:1px solid var(--border);border-radius:var(--r-xl);padding:72px 48px;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
-    .cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(124,58,237,.16) 0%,transparent 70%);pointer-events:none}
-    .cta-box::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--g-main)}
-    .cta-title{font-family:var(--font-h);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;margin-bottom:18px;position:relative;z-index:1}
-    .cta-sub{font-size:1.0625rem;color:var(--text-2);max-width:500px;margin:0 auto 40px;position:relative;z-index:1;line-height:1.7}
-    .cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
-    .cta-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px;position:relative;z-index:1}
-    .cbadge{display:flex;align-items:center;gap:6px;font-size:.8rem;color:var(--text-3)}
-    .cbadge .dot{width:6px;height:6px;background:var(--green-l);border-radius:50%}
+/* ── marquee ── */
+.marquee{padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;position:relative;background:rgba(11,9,32,.5)}
+.marquee::before,.marquee::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}
+.marquee::after{right:0;background:linear-gradient(-90deg,var(--bg),transparent)}
+.marquee-track{display:flex;gap:14px;width:max-content;animation:scrollX 36s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scrollX{to{transform:translateX(-50%)}}
+.mq{display:inline-flex;align-items:center;gap:8px;padding:9px 20px;border-radius:var(--pill);background:rgba(255,255,255,.03);border:1px solid var(--line);font-size:.86rem;font-weight:600;color:var(--ink-2);white-space:nowrap;transition:.25s}
+.mq:hover{color:var(--ink);border-color:var(--line-vio)}
 
-    /* ═══════════════════════════════════════════════════
-       FOOTER
-    ═══════════════════════════════════════════════════ */
-    .footer{padding:52px 0 28px;border-top:1px solid var(--border-l)}
-    .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
-    .footer-brand p{font-size:.875rem;color:var(--text-2);line-height:1.65;max-width:280px;margin:14px 0 20px}
-    .social-row{display:flex;gap:8px}
-    .soc{width:36px;height:36px;border-radius:var(--r-sm);background:rgba(255,255,255,.04);border:1px solid var(--border-l);display:flex;align-items:center;justify-content:center;font-size:.9rem;transition:.25s}
-    .soc:hover{background:rgba(124,58,237,.12);border-color:var(--border);transform:translateY(-2px)}
-    .foot-col-title{font-weight:700;font-size:.9375rem;margin-bottom:14px}
-    .foot-links{display:flex;flex-direction:column;gap:9px}
-    .foot-links a{font-size:.875rem;color:var(--text-2)}
-    .foot-links a:hover{color:var(--text)}
-    .foot-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:22px;border-top:1px solid var(--border-l);font-size:.8125rem;color:var(--text-3)}
-    .foot-bottom a{color:var(--purple-l)}
+/* ── bento ── */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(190px,auto);gap:18px}
+.bx{background:var(--card);border:1px solid var(--line);border-radius:var(--r3);padding:30px;position:relative;overflow:hidden;transition:all .4s var(--spring);display:flex;flex-direction:column}
+.bx:hover{transform:translateY(-5px);border-color:var(--line-hot);box-shadow:var(--sh-2)}
+.bx-wide{grid-column:span 2}
+.bx-tall{grid-row:span 2}
+.bx-ico{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:18px}
+.bx-t{font-family:var(--f-head);font-size:1.08rem;font-weight:700;margin-bottom:9px}
+.bx-p{font-size:.875rem;color:var(--ink-2);line-height:1.65}
+.bx-link{margin-top:auto;padding-top:16px;font-size:.82rem;font-weight:700;color:var(--violet-l);display:inline-flex;align-items:center;gap:6px}
+.bx-link .ar{transition:transform .3s}
+.bx:hover .bx-link .ar{transform:translateX(4px)}
+.bx-glow-1::before,.bx-glow-2::before{content:'';position:absolute;width:200px;height:200px;border-radius:50%;filter:blur(70px);opacity:.3;pointer-events:none;transition:opacity .4s}
+.bx-glow-1::before{background:var(--violet);top:-80px;right:-60px}
+.bx-glow-2::before{background:var(--cyan);bottom:-80px;left:-60px}
+.bx:hover.bx-glow-1::before,.bx:hover.bx-glow-2::before{opacity:.5}
+.mini-list{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.mini-row{display:flex;align-items:center;gap:10px;font-size:.83rem;color:var(--ink-2);padding:8px 12px;border-radius:var(--r1);background:rgba(255,255,255,.025);border:1px solid transparent;transition:.25s;font-family:var(--f-mono)}
+.mini-row:hover{border-color:var(--line-vio);color:var(--ink)}
+.mini-row .tag{margin-left:auto;font-size:.66rem;font-weight:700;padding:2px 9px;border-radius:var(--pill);font-family:var(--f-body)}
+.tag-v{background:rgba(124,58,237,.16);color:var(--violet-l)}
+.tag-c{background:rgba(6,182,212,.13);color:var(--cyan-l)}
+.tag-m{background:rgba(52,211,153,.13);color:var(--mint)}
+.tag-a{background:rgba(251,191,36,.12);color:var(--amber)}
 
-    /* Glow orbs */
-    .orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;animation:orbf 9s ease-in-out infinite}
-    .orb-1{width:400px;height:400px;background:rgba(124,58,237,.1);top:-100px;left:-100px}
-    .orb-2{width:300px;height:300px;background:rgba(6,182,212,.07);bottom:-60px;right:-60px;animation-delay:-4s}
-    @keyframes orbf{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(18px,-14px) scale(1.04)}66%{transform:translate(-10px,10px) scale(.97)}}
+/* ── roadmap explorer ── */
+.rx{display:grid;grid-template-columns:300px 1fr;gap:22px;align-items:start}
+.rx-tabs{display:flex;flex-direction:column;gap:8px;position:sticky;top:96px}
+.rx-tab{display:flex;align-items:center;gap:13px;width:100%;padding:15px 18px;border-radius:var(--r2);border:1px solid var(--line);background:var(--card);text-align:left;transition:all .3s var(--silk);color:var(--ink-2)}
+.rx-tab:hover{border-color:var(--line-vio);color:var(--ink)}
+.rx-tab.live{background:linear-gradient(120deg,rgba(124,58,237,.16),rgba(6,182,212,.08));border-color:var(--line-hot);color:var(--ink);box-shadow:var(--sh-1)}
+.rx-tab .em{font-size:1.3rem;flex-shrink:0}
+.rx-tab .tt{font-weight:700;font-size:.9rem;display:block;font-family:var(--f-head)}
+.rx-tab .ts{font-size:.72rem;color:var(--ink-3)}
+.rx-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r3);padding:36px;box-shadow:var(--sh-2);position:relative;overflow:hidden;min-height:420px}
+.rx-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--g-brand)}
+.rxp-head{display:flex;align-items:center;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+.rxp-title{font-family:var(--f-head);font-size:1.5rem;font-weight:800}
+.rxp-lvl{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:5px 13px;border-radius:var(--pill)}
+.rxp-meta{display:flex;gap:18px;font-size:.82rem;color:var(--ink-3);margin-bottom:18px;flex-wrap:wrap}
+.rxp-desc{font-size:.95rem;color:var(--ink-2);line-height:1.75;margin-bottom:24px;max-width:560px}
+.rxp-steps{display:flex;flex-direction:column;gap:0;margin-bottom:28px;position:relative}
+.rxp-step{display:flex;gap:16px;padding:11px 0;position:relative}
+.rxp-step::before{content:'';position:absolute;left:13px;top:38px;bottom:-4px;width:2px;background:linear-gradient(var(--line-vio),transparent)}
+.rxp-step:last-child::before{display:none}
+.rxp-dot{width:28px;height:28px;border-radius:50%;background:rgba(124,58,237,.14);border:1.5px solid var(--line-vio);display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:800;color:var(--violet-l);flex-shrink:0;font-family:var(--f-mono)}
+.rxp-step-t{font-weight:700;font-size:.9rem;padding-top:3px}
+.rxp-step-t span{display:block;font-weight:400;font-size:.8rem;color:var(--ink-3)}
+.rx-fade{animation:rxIn .45s var(--silk)}
+@keyframes rxIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 
-    /* Toast */
-    .toast{position:fixed;bottom:26px;right:26px;z-index:9999;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow);font-size:.875rem;transform:translateY(80px);opacity:0;transition:all .4s var(--ease-bounce);max-width:290px}
-    .toast.show{transform:none;opacity:1}
-    .toast-ico{font-size:1.25rem}
-    .toast-t strong{display:block;font-weight:600;font-size:.875rem;margin-bottom:2px}
-    .toast-t span{color:var(--text-2);font-size:.8rem}
+/* ── interview accordion ── */
+.qa{max-width:840px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.qa-item{background:var(--card);border:1px solid var(--line);border-radius:var(--r2);overflow:hidden;transition:border-color .3s}
+.qa-item.open{border-color:var(--line-hot)}
+.qa-q{width:100%;display:flex;align-items:center;gap:14px;padding:21px 24px;text-align:left;font-size:.95rem;font-weight:600}
+.qa-cat{font-size:.66rem;font-weight:800;padding:4px 11px;border-radius:var(--pill);flex-shrink:0;letter-spacing:.05em;text-transform:uppercase}
+.qa-plus{margin-left:auto;font-size:1.15rem;color:var(--violet-l);transition:transform .3s;flex-shrink:0}
+.qa-item.open .qa-plus{transform:rotate(45deg)}
+.qa-a{max-height:0;overflow:hidden;transition:max-height .45s var(--silk)}
+.qa-a-in{padding:0 24px 22px;font-size:.9rem;color:var(--ink-2);line-height:1.75}
+.qa-a-in code{font-family:var(--f-mono);font-size:.8rem;background:rgba(124,58,237,.12);padding:2px 7px;border-radius:6px;color:var(--violet-l)}
 
-    /* ═══════════════════════════════════════════════════
-       RESPONSIVE
-    ═══════════════════════════════════════════════════ */
-    @media(max-width:1100px){
-      .stats-grid{grid-template-columns:repeat(2,1fr)}
-      .roads-grid{grid-template-columns:repeat(2,1fr)}
-      .content-grid{grid-template-columns:repeat(2,1fr)}
-      .contrib-grid{grid-template-columns:repeat(3,1fr)}
-      .footer-inner{grid-template-columns:1fr 1fr}
-    }
-    @media(max-width:880px){
-      .hero-wrap{grid-template-columns:1fr}.hero-visual-wrap{display:none}
-      .demo-wrap{grid-template-columns:1fr}
-      .projects-grid{grid-template-columns:repeat(2,1fr)}
-    }
-    @media(max-width:640px){
-      .nav-links,.nav-actions .btn:not(.btn-p){display:none}
-      .nav-hb{display:flex}
-      .stats-grid{grid-template-columns:repeat(2,1fr)}
-      .roads-grid,.content-grid,.projects-grid{grid-template-columns:1fr}
-      .contrib-grid{grid-template-columns:repeat(2,1fr)}
-      .footer-inner{grid-template-columns:1fr}
-      .foot-bottom{flex-direction:column;gap:10px;text-align:center}
-      .cta-box{padding:44px 24px}
-      .hero-stats{gap:16px}
-    }
-    /* ── Respect reduced-motion preference (accessibility) ─ */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
-        scroll-behavior: auto !important;
-      }
-      .reveal, .reveal-l, .reveal-r { opacity: 1 !important; transform: none !important; }
-      #stars, .orb, .f-card { animation: none !important; }
-    }
-  </style>
+/* ── contribute band ── */
+.contrib{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cb{background:var(--card);border:1px solid var(--line);border-radius:var(--r3);padding:30px;text-align:center;transition:all .35s var(--spring)}
+.cb:hover{transform:translateY(-5px);border-color:var(--line-hot);box-shadow:var(--sh-2)}
+.cb-em{font-size:2.1rem;margin-bottom:14px}
+.cb-t{font-family:var(--f-head);font-weight:700;font-size:1rem;margin-bottom:8px}
+.cb-p{font-size:.85rem;color:var(--ink-2);line-height:1.65;margin-bottom:16px}
+.cb-a{font-size:.82rem;font-weight:700;color:var(--mint)}
 
-  <!-- Structured data (JSON-LD) for SEO / rich results -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "name": "AI Magic Mastery",
-        "alternateName": "AI Mastery Ultimate Resources",
-        "url": "https://aredwan-xyz.github.io/ai-mastery-ultimate-resources/",
-        "description": "The most comprehensive open-source AI learning repository — roadmaps, resources, cheatsheets, interview prep and projects.",
-        "inLanguage": "en"
-      },
-      {
-        "@type": "Organization",
-        "name": "CodeBeez",
-        "url": "https://codebeez.ai",
-        "founder": { "@type": "Person", "name": "Abid Redwan" },
-        "sameAs": [
-          "https://github.com/aredwan-xyz/ai-mastery-ultimate-resources",
-          "https://x.com/codebeezai"
-        ]
-      },
-      {
-        "@type": "LearningResource",
-        "name": "AI Magic Mastery",
-        "learningResourceType": "Curriculum",
-        "educationalLevel": "Beginner to Advanced",
-        "teaches": ["Machine Learning","Deep Learning","Large Language Models","Prompt Engineering","AI Agents","MLOps","Generative AI","Computer Vision","NLP"],
-        "isAccessibleForFree": true,
-        "license": "https://opensource.org/licenses/MIT",
-        "author": { "@type": "Person", "name": "Abid Redwan" },
-        "provider": { "@type": "Organization", "name": "CodeBeez" }
-      }
-    ]
-  }
-  </script>
+/* ── mega CTA ── */
+.mega{padding:90px 0}
+.mega-box{position:relative;border-radius:var(--r4);overflow:hidden;padding:88px 48px;text-align:center;background:linear-gradient(180deg,var(--card-2),var(--card));border:1px solid var(--line-vio);box-shadow:var(--sh-3)}
+.mega-box::before{content:'';position:absolute;inset:-40%;background:conic-gradient(from 90deg at 50% 50%,transparent 60%,rgba(124,58,237,.16) 75%,rgba(6,182,212,.16) 85%,transparent 100%);animation:rotor 14s linear infinite;pointer-events:none}
+@keyframes rotor{to{transform:rotate(360deg)}}
+.mega-box::after{content:'';position:absolute;inset:1px;border-radius:calc(var(--r4) - 1px);background:linear-gradient(180deg,rgba(22,22,55,.94),rgba(16,15,38,.97));pointer-events:none}
+.mega-in{position:relative;z-index:1}
+.mega-h{font-family:var(--f-head);font-size:clamp(2rem,4.4vw,3.4rem);font-weight:900;letter-spacing:-.02em;margin-bottom:18px}
+.mega-p{font-size:1.08rem;color:var(--ink-2);max-width:520px;margin:0 auto 40px;line-height:1.75}
+.mega-badges{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:28px;font-size:.8rem;color:var(--ink-3)}
+.mega-badges span{display:flex;align-items:center;gap:7px}
+.mega-badges .d{width:6px;height:6px;background:var(--mint);border-radius:50%}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:9998}
+
+/* ── footer ── */
+.foot{padding:56px 0 30px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:38px;margin-bottom:46px}
+.foot-brand p{font-size:.875rem;color:var(--ink-2);line-height:1.7;max-width:280px;margin:14px 0 20px}
+.socials{display:flex;gap:8px}
+.so{width:37px;height:37px;border-radius:var(--r1);background:rgba(255,255,255,.04);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:.9rem;transition:.25s}
+.so:hover{background:rgba(124,58,237,.14);border-color:var(--line-vio);transform:translateY(-2px)}
+.fc-t{font-weight:700;font-size:.9375rem;margin-bottom:15px;font-family:var(--f-head)}
+.fc-l{display:flex;flex-direction:column;gap:10px}
+.fc-l a{font-size:.86rem;color:var(--ink-2)}
+.fc-l a:hover{color:var(--ink)}
+.foot-base{display:flex;align-items:center;justify-content:space-between;padding-top:24px;border-top:1px solid var(--line);font-size:.8125rem;color:var(--ink-3);flex-wrap:wrap;gap:10px}
+.foot-base a{color:var(--violet-l)}
+
+/* toast */
+.toast{position:fixed;bottom:26px;right:26px;z-index:9999;background:var(--card-2);border:1px solid var(--line-vio);border-radius:var(--r2);padding:14px 19px;display:flex;align-items:center;gap:12px;box-shadow:var(--sh-2);font-size:.875rem;transform:translateY(90px);opacity:0;transition:all .4s var(--spring);max-width:300px}
+.toast.show{transform:none;opacity:1}
+.toast strong{display:block;font-size:.86rem}
+.toast span{color:var(--ink-2);font-size:.78rem}
+
+/* ── responsive ── */
+@media(max-width:1080px){
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .rx{grid-template-columns:1fr}
+  .rx-tabs{position:static;flex-direction:row;overflow-x:auto;padding-bottom:6px}
+  .rx-tab{min-width:190px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .contrib{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .nav-links,.nav-cta .bt{display:none}
+  .burger{display:flex}
+  .bento{grid-template-columns:1fr}
+  .bx-wide{grid-column:span 1}
+  .ss-item{min-width:120px;padding:18px 20px}
+  .mega-box{padding:56px 24px}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-base{flex-direction:column;text-align:center}
+  .hero{padding-top:120px}
+  .clone{width:100%}
+  .clone-cmd{flex:1}
+}
+</style>
 </head>
 <body>
 
-<!-- Canvas stars -->
-<canvas id="stars"></canvas>
+<div id="progress"></div>
+<canvas id="confetti"></canvas>
 
-<!-- ═══════════════════════════════════════════════════
-     NAVBAR
-═══════════════════════════════════════════════════ -->
+<!-- ═══ NAV ═══ -->
 <nav class="nav" id="nav">
-  <div class="container nav-inner">
-    <a href="#" class="nav-logo">
-      <div class="logo-orb">🧠</div>
-      <div>AI Magic Mastery<span class="logo-sub">by CodeBeez</span></div>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">
+      <span class="brand-orb">🧠</span>
+      <span>AI Magic Mastery<span class="brand-sub">by CodeBeez</span></span>
     </a>
-    <ul class="nav-links">
-      <li><a href="#roadmaps">Roadmaps</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#interview">Interview Prep</a></li>
-      <li><a href="#community">Community</a></li>
-    </ul>
-    <div class="nav-actions">
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="gh-star btn btn-sm">
-        <span class="star-icon">★</span> Star on GitHub <span class="star-count" id="star-count">★</span>
+    <div class="nav-links">
+      <a href="#explore">Explore</a>
+      <a href="#roadmaps">Roadmaps</a>
+      <a href="#interview">Interview Prep</a>
+      <a href="#contribute">Contribute</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" rel="noopener" class="star-pill">
+        <span class="ic">★</span> Star <span class="star-n" id="star-n">★</span>
       </a>
-      <button class="nav-hb" id="hb" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
-<div class="mob-menu" id="mob">
+<div class="sheet" id="sheet">
+  <a href="#explore">Explore</a>
   <a href="#roadmaps">Roadmaps</a>
-  <a href="#resources">Resources</a>
-  <a href="#projects">Projects</a>
   <a href="#interview">Interview Prep</a>
-  <a href="#community">Community</a>
-  <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" style="color:var(--purple-l);font-weight:600;">★ Star on GitHub</a>
+  <a href="#contribute">Contribute</a>
+  <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" rel="noopener" style="color:var(--violet-l);font-weight:700">★ Star on GitHub</a>
 </div>
 
+<!-- ═══ HERO ═══ -->
+<header class="hero" id="top">
+  <div class="aurora"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="wrap hero-in">
+    <div class="hero-badge"><span class="pulse"></span>Open-source · MIT · Updated monthly</div>
+    <h1 class="hero-h1">The AI curriculum<br/>that's <span class="shimmer">actually free.</span></h1>
+    <p class="hero-p">Six career roadmaps, hand-vetted resources, cheatsheets, interview prep, and 25+ real projects — one repository, zero paywalls, built in the open.</p>
+    <div class="hero-actions">
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" rel="noopener" class="bt bt-hero bt-lg" id="hero-star">⭐ Star the Repo</a>
+      <a href="#roadmaps" class="bt bt-ghost bt-lg">🗺️ Explore the Roadmaps</a>
+    </div>
 
-<!-- ═══════════════════════════════════════════════════
-     HERO
-═══════════════════════════════════════════════════ -->
-<section class="hero" id="home">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
+    <div class="clone">
+      <div class="clone-cmd"><span class="p">$</span> git clone https://github.com/aredwan-xyz/ai-mastery-ultimate-resources.git</div>
+      <button class="clone-btn" id="clone-btn" aria-label="Copy clone command">⧉ Copy</button>
+    </div>
 
-  <div class="container hero-wrap">
-    <!-- Left -->
-    <div class="hero-left">
-      <div class="hero-eyebrow"><span class="dot"></span>🧠 Free &amp; Open-Source AI Education</div>
+    <div class="stat-strip rv">
+      <div class="ss-item"><span class="ss-n gi" data-n="6">0</span><span class="ss-l">Career Roadmaps</span></div>
+      <div class="ss-item"><span class="ss-n gm" data-n="12">0</span><span class="ss-l">AI Topics</span></div>
+      <div class="ss-item"><span class="ss-n gw" data-n="25" data-sfx="+">0</span><span class="ss-l">Project Ideas</span></div>
+      <div class="ss-item"><span class="ss-n gi" data-n="100" data-sfx="%">0</span><span class="ss-l">Free &amp; Open</span></div>
+    </div>
+  </div>
+</header>
 
-      <h1 class="hero-title">
-        Master AI.<br/>
-        <span class="gt">Everything.</span><br/>
-        For Free.
-      </h1>
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq-track">
+    <span class="mq">🧠 Machine Learning</span><span class="mq">🔥 Deep Learning</span><span class="mq">🤖 LLMs</span><span class="mq">✨ Prompt Engineering</span><span class="mq">🕵️ AI Agents</span><span class="mq">⚙️ MLOps</span><span class="mq">🎨 Generative AI</span><span class="mq">👁️ Computer Vision</span><span class="mq">💬 NLP</span><span class="mq">🔍 RAG Systems</span><span class="mq">🧮 Math for AI</span><span class="mq">⚖️ AI Ethics</span>
+  </div>
+</div>
 
-      <p class="hero-sub">
-        The most comprehensive, curated, and up-to-date AI learning hub on the planet.
-        Curated resources · 6 career roadmaps · interview prep · 25+ projects · built in the open.
-      </p>
+<!-- ═══ EXPLORE (bento) ═══ -->
+<section class="sect" id="explore">
+  <div class="wrap">
+    <div class="shead center rv">
+      <div class="kicker">What's Inside</div>
+      <h2 class="h2">One repo. <span class="gi">Everything AI.</span></h2>
+      <p class="lede">Every folder is a doorway — curated, structured, and maintained so you never have to wonder "what should I learn next?"</p>
+    </div>
 
-      <div class="hero-cta">
-        <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="btn btn-p btn-lg">
-          ⭐ Star on GitHub
+    <div class="bento">
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/tree/main/roadmaps" target="_blank" rel="noopener" class="bx bx-wide bx-tall bx-glow-1 rv">
+        <div class="bx-ico" style="background:linear-gradient(135deg,rgba(124,58,237,.22),rgba(6,182,212,.16))">🗺️</div>
+        <div class="bx-t">Six Career Roadmaps</div>
+        <p class="bx-p">Week-by-week plans from absolute beginner to AI researcher — with exact resources, milestones, and projects at each stage.</p>
+        <div class="mini-list">
+          <div class="mini-row">🌱 ai-foundations <span class="tag tag-m">12 wks</span></div>
+          <div class="mini-row">⚡ ml-engineer <span class="tag tag-v">16 wks</span></div>
+          <div class="mini-row">🤖 llm-engineer <span class="tag tag-a">12 wks</span></div>
+          <div class="mini-row">🔬 ai-researcher <span class="tag tag-c">24 wks</span></div>
+          <div class="mini-row">✨ prompt-engineer <span class="tag tag-m">3 wks</span></div>
+          <div class="mini-row">🕵️ agent-builder <span class="tag tag-a">6 wks</span></div>
+        </div>
+        <span class="bx-link">Open roadmaps <span class="ar">→</span></span>
+      </a>
+
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/tree/main/cheatsheets" target="_blank" rel="noopener" class="bx rv">
+        <div class="bx-ico" style="background:linear-gradient(135deg,rgba(52,211,153,.2),rgba(6,182,212,.14))">📋</div>
+        <div class="bx-t">Cheatsheets</div>
+        <p class="bx-p">PyTorch, prompt engineering techniques, and a 150-term LLM glossary — bookmark-worthy references.</p>
+        <span class="bx-link">Browse sheets <span class="ar">→</span></span>
+      </a>
+
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/tree/main/interview-prep" target="_blank" rel="noopener" class="bx rv">
+        <div class="bx-ico" style="background:linear-gradient(135deg,rgba(251,191,36,.18),rgba(251,113,133,.14))">🎯</div>
+        <div class="bx-t">Interview Prep</div>
+        <p class="bx-p">Real ML, deep learning &amp; LLM questions with fully worked answers. A growing, open bank.</p>
+        <span class="bx-link">Start prepping <span class="ar">→</span></span>
+      </a>
+
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/projects/README.md" target="_blank" rel="noopener" class="bx bx-glow-2 rv">
+        <div class="bx-ico" style="background:linear-gradient(135deg,rgba(6,182,212,.2),rgba(124,58,237,.14))">🛠️</div>
+        <div class="bx-t">25+ Projects</div>
+        <p class="bx-p">From a house-price predictor to a multi-agent research system — each with stack, dataset &amp; goals.</p>
+        <span class="bx-link">Pick a project <span class="ar">→</span></span>
+      </a>
+
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/tree/main/resources" target="_blank" rel="noopener" class="bx rv">
+        <div class="bx-ico" style="background:linear-gradient(135deg,rgba(251,113,133,.16),rgba(167,139,250,.16))">📚</div>
+        <div class="bx-t">12 Topic Guides</div>
+        <p class="bx-p">Curated resources across ML, LLMs, vision, NLP, agents, MLOps, ethics and more — no fluff, hand-vetted.</p>
+        <span class="bx-link">Dive in <span class="ar">→</span></span>
+      </a>
+
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="bx rv" style="background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(6,182,212,.06));border-color:var(--line-vio)">
+        <div class="bx-ico" style="background:linear-gradient(135deg,rgba(124,58,237,.24),rgba(6,182,212,.18))">🤝</div>
+        <div class="bx-t">Built in the Open</div>
+        <p class="bx-p">MIT licensed, PRs welcome. Add a resource, fix a link, write a guide — there's an open seat for you.</p>
+        <span class="bx-link" style="color:var(--mint)">Contribute <span class="ar">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ROADMAP EXPLORER ═══ -->
+<section class="sect" id="roadmaps" style="background:linear-gradient(180deg,var(--bg-2),var(--bg))">
+  <div class="wrap">
+    <div class="shead center rv">
+      <div class="kicker">Interactive</div>
+      <h2 class="h2">Find <span class="gi">your path.</span></h2>
+      <p class="lede">Click a track to see how it's structured. Every roadmap is a real, detailed markdown file in the repo — not a teaser.</p>
+    </div>
+
+    <div class="rx rv">
+      <div class="rx-tabs" id="rx-tabs" role="tablist" aria-label="Roadmap tracks"></div>
+      <div class="rx-panel" id="rx-panel" role="tabpanel"><!-- static fallback; JS replaces with the interactive explorer -->
+        <div class="rxp-head">
+          <span style="font-size:2rem">🌱</span>
+          <span class="rxp-title">AI Foundations</span>
+          <span class="rxp-lvl" style="background:rgba(52,211,153,.14);color:var(--mint)">Beginner</span>
+        </div>
+        <div class="rxp-meta"><span>📅 12 weeks</span><span>🆓 Free resources</span><span>🛠️ 3 milestone projects</span></div>
+        <p class="rxp-desc">Zero to your first working ML model. Python, math intuition, scikit-learn, and your first neural network — no prior experience needed.</p>
+        <a class="bt bt-hero" href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/01-ai-foundations-roadmap.md" target="_blank" rel="noopener">Open this roadmap →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INTERVIEW PREP ═══ -->
+<section class="sect" id="interview">
+  <div class="wrap">
+    <div class="shead center rv">
+      <div class="kicker">Get Hired</div>
+      <h2 class="h2">Interview questions, <span class="gw">answered properly.</span></h2>
+      <p class="lede">A taste of the open question bank — expand any question for the actual worked answer, straight from the repo.</p>
+    </div>
+
+    <div class="qa rv">
+      <div class="qa-item">
+        <button class="qa-q"><span class="qa-cat" style="background:rgba(124,58,237,.15);color:var(--violet-l)">ML Theory</span> Explain the bias-variance tradeoff. <span class="qa-plus">＋</span></button>
+        <div class="qa-a"><div class="qa-a-in">Bias is error from wrong assumptions (model too simple → underfitting); variance is error from sensitivity to data fluctuations (model too complex → overfitting). Total error = bias² + variance + irreducible noise. Reduce bias with a more expressive model or better features; reduce variance with regularization, more data, or ensembles. The craft is finding the sweet spot between the two.</div></div>
+      </div>
+      <div class="qa-item">
+        <button class="qa-q"><span class="qa-cat" style="background:rgba(236,72,153,.13);color:#F9A8D4">LLMs</span> RAG vs fine-tuning — when do you use each? <span class="qa-plus">＋</span></button>
+        <div class="qa-a"><div class="qa-a-in">Use <strong>RAG</strong> for knowledge: private or fast-changing information, citations, and reduced hallucination — you retrieve relevant documents at inference time and pass them as context. Use <strong>fine-tuning</strong> for behavior: consistent output format, domain style, or making a small model punch above its weight. Rule of thumb: try prompting first, RAG if the model lacks knowledge, fine-tune only if you need to change how it behaves.</div></div>
+      </div>
+      <div class="qa-item">
+        <button class="qa-q"><span class="qa-cat" style="background:rgba(6,182,212,.13);color:var(--cyan-l)">Deep Learning</span> How does LoRA work? <span class="qa-plus">＋</span></button>
+        <div class="qa-a"><div class="qa-a-in">LoRA freezes the pretrained weights <code>W</code> and learns a low-rank update <code>ΔW = BA</code>, where <code>B</code> and <code>A</code> are small matrices with rank r ≪ min(d,k). You train ~0.1% of the parameters, and at inference you can merge <code>W + BA</code> for zero overhead. It works because the weight updates needed to adapt a pretrained model have low intrinsic rank — the model doesn't need to change in many directions to learn a new task.</div></div>
+      </div>
+      <div class="qa-item">
+        <button class="qa-q"><span class="qa-cat" style="background:rgba(52,211,153,.13);color:var(--mint)">Coding</span> Implement scaled dot-product attention. <span class="qa-plus">＋</span></button>
+        <div class="qa-a"><div class="qa-a-in"><code>scores = Q @ K.transpose(-2,-1) / sqrt(d_k)</code> → apply mask (fill with −1e9 where masked) → <code>weights = softmax(scores, dim=-1)</code> → <code>output = weights @ V</code>. The √d_k scaling stops dot products from growing with dimension, which would push softmax into regions with vanishing gradients. The full PyTorch solution lives in the repo's interview-prep folder.</div></div>
+      </div>
+    </div>
+
+    <div class="center" style="margin-top:34px">
+      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/interview-prep/README.md" target="_blank" rel="noopener" class="bt bt-ghost">Explore the full question bank →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTRIBUTE ═══ -->
+<section class="sect" id="contribute" style="background:linear-gradient(180deg,var(--bg),var(--bg-2))">
+  <div class="wrap">
+    <div class="shead center rv">
+      <div class="kicker">Open Source</div>
+      <h2 class="h2">Help build the <span class="gm">best free AI curriculum.</span></h2>
+      <p class="lede">Every resource is hand-vetted. Every PR makes it better for the next learner. Three easy ways in:</p>
+    </div>
+    <div class="contrib rv">
+      <div class="cb">
+        <div class="cb-em">📚</div>
+        <div class="cb-t">Share a Resource</div>
+        <p class="cb-p">Found a course, paper, or tool that genuinely helped you? Open an issue with our resource template.</p>
+        <a class="cb-a" href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/issues/new/choose" target="_blank" rel="noopener">Suggest it →</a>
+      </div>
+      <div class="cb">
+        <div class="cb-em">✍️</div>
+        <div class="cb-t">Write a Guide</div>
+        <p class="cb-p">Several topic guides are open for authorship. Pick one, go deep, and get credited as a contributor.</p>
+        <a class="cb-a" href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Claim a topic →</a>
+      </div>
+      <div class="cb">
+        <div class="cb-em">🎯</div>
+        <div class="cb-t">Add Interview Q&amp;As</div>
+        <p class="cb-p">Been through an AI interview recently? Add the questions (and proper answers) to the open bank.</p>
+        <a class="cb-a" href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/tree/main/interview-prep" target="_blank" rel="noopener">Add questions →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MEGA CTA ═══ -->
+<section class="mega">
+  <div class="wrap">
+    <div class="mega-box rv">
+      <div class="mega-in">
+        <div class="kicker" style="justify-content:center">Free. Forever. No catch.</div>
+        <h2 class="mega-h">Star it now,<br/><span class="gi">thank yourself later.</span></h2>
+        <p class="mega-p">One click helps more people find a genuinely free way to learn AI — and bookmarks the whole curriculum for you.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" rel="noopener" class="bt bt-hero bt-lg" id="mega-star">⭐ Star on GitHub</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/fork" target="_blank" rel="noopener" class="bt bt-ghost bt-lg">🍴 Fork it</a>
+        </div>
+        <div class="mega-badges">
+          <span><span class="d"></span>MIT License</span>
+          <span><span class="d"></span>Updated monthly</span>
+          <span><span class="d"></span>PRs welcome</span>
+          <span><span class="d"></span>No ads, no paywalls</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand">
+          <span class="brand-orb" style="width:31px;height:31px;font-size:.95rem">🧠</span>
+          <span style="font-size:1rem">AI Magic Mastery<span class="brand-sub">by CodeBeez</span></span>
         </a>
-        <a href="#roadmaps" class="btn btn-o btn-lg">
-          🗺️ Pick Your Path
-        </a>
-      </div>
-
-      <div class="hero-stats">
-        <div>
-          <span class="hs-num gt" data-count="6" data-sfx="">0</span>
-          <span class="hs-lbl">Career Roadmaps</span>
-        </div>
-        <div>
-          <span class="hs-num" style="background:var(--g-green);-webkit-background-clip:text;-webkit-text-fill-color:transparent;" data-count="200" data-sfx="+">0</span>
-          <span class="hs-lbl">Curated Resources</span>
-        </div>
-        <div>
-          <span class="hs-num go" data-count="25" data-sfx="+">0</span>
-          <span class="hs-lbl">Project Ideas</span>
-        </div>
-        <div>
-          <span class="hs-num gp" data-count="100" data-sfx="%">0</span>
-          <span class="hs-lbl">Free &amp; Open</span>
+        <p>The open-source AI curriculum. Roadmaps, resources, cheatsheets and interview prep — free forever, maintained by Abid Redwan &amp; CodeBeez.</p>
+        <div class="socials">
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" rel="noopener" class="so" title="GitHub">⌥</a>
+          <a href="https://x.com/codebeezai" target="_blank" rel="noopener" class="so" title="X">𝕏</a>
+          <a href="https://discord.gg/codebeez" target="_blank" rel="noopener" class="so" title="Discord">💬</a>
+          <a href="https://linkedin.com/in/abidredwan" target="_blank" rel="noopener" class="so" title="LinkedIn">in</a>
         </div>
       </div>
-    </div>
-
-    <!-- Right — repo file tree -->
-    <div class="hero-visual-wrap" style="position:relative;">
-      <div class="repo-card" style="position:relative;">
-        <div class="repo-topbar">
-          <div class="repo-dot" style="background:#FF5F57"></div>
-          <div class="repo-dot" style="background:#FFBD2E"></div>
-          <div class="repo-dot" style="background:#28C840"></div>
-          <div class="repo-title">aredwan-xyz / ai-mastery-ultimate-resources</div>
-        </div>
-        <div class="repo-body">
-          <div class="repo-item">
-            <span class="ico">📁</span><span class="name">roadmaps/</span><span class="pill pill-p">6 paths</span>
-          </div>
-          <div class="repo-item">
-            <span class="ico">📁</span><span class="name">resources/</span><span class="pill pill-c">12 topics</span>
-          </div>
-          <div class="repo-item">
-            <span class="ico">📁</span><span class="name">cheatsheets/</span><span class="pill pill-g">8 sheets</span>
-          </div>
-          <div class="repo-item">
-            <span class="ico">📁</span><span class="name">interview-prep/</span><span class="pill pill-o">Q&amp;A bank</span>
-          </div>
-          <div class="repo-item">
-            <span class="ico">📁</span><span class="name">projects/</span><span class="pill pill-p">25 ideas</span>
-          </div>
-          <div class="repo-item">
-            <span class="ico">📁</span><span class="name">community/</span><span class="pill pill-c">guides</span>
-          </div>
-          <div class="repo-divider"></div>
-          <div class="repo-item">
-            <span class="ico">📄</span><span class="name">README.md</span><span style="font-size:.72rem;color:var(--text-3)">1,138 lines</span>
-          </div>
-          <div class="repo-item">
-            <span class="ico">📄</span><span class="name">CONTRIBUTING.md</span>
-          </div>
-          <div class="repo-item">
-            <span class="ico">📄</span><span class="name">LICENSE</span><span class="pill pill-g">MIT</span>
-          </div>
-          <div class="repo-footer">
-            <div class="commit-dot"></div>
-            Latest: 🚀 Launch — AI Magic Mastery v2.0 &nbsp;·&nbsp; Just now
-          </div>
-        </div>
-      </div>
-
-      <!-- Float cards -->
-      <div class="f-card fc-top">
-        <div class="fc-avt">⭐</div>
-        <div class="fc-txt">
-          <strong>100% Free &amp; Open</strong>
-          <span>MIT licensed — fork it</span>
-          <div class="stars-row"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        </div>
-      </div>
-      <div class="f-card fc-btm">
-        <div class="fc-avt" style="background:var(--g-green);">🏆</div>
-        <div class="fc-txt">
-          <strong>Built in the open</strong>
-          <span>Contributions welcome</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     TRUST BAR
-═══════════════════════════════════════════════════ -->
-<section class="trust">
-  <div class="container">
-    <p class="trust-lbl">Curated from the world's top AI labs &amp; educators</p>
-    <div class="trust-logos">
-      <div class="tlogo">🔍 Google</div>
-      <div class="tlogo">🤖 OpenAI</div>
-      <div class="tlogo">🧬 Anthropic</div>
-      <div class="tlogo">📘 Meta AI</div>
-      <div class="tlogo">☁️ Microsoft</div>
-      <div class="tlogo">🤗 Hugging Face</div>
-      <div class="tlogo">⚡ Mistral AI</div>
-      <div class="tlogo">🎵 Spotify</div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     STATS
-═══════════════════════════════════════════════════ -->
-<section class="stats">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-card reveal">
-        <div class="stat-ico" style="background:linear-gradient(135deg,rgba(124,58,237,.2),rgba(6,182,212,.15))">🗺️</div>
-        <div class="stat-n gt" data-count="6" data-sfx="">0</div>
-        <div class="stat-l">Career Roadmaps</div>
-      </div>
-      <div class="stat-card reveal">
-        <div class="stat-ico" style="background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(6,182,212,.15))">📚</div>
-        <div class="stat-n gg" data-count="12" data-sfx="">0</div>
-        <div class="stat-l">AI Topics Covered</div>
-      </div>
-      <div class="stat-card reveal">
-        <div class="stat-ico" style="background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(251,191,36,.15))">🛠️</div>
-        <div class="stat-n go" data-count="25" data-sfx="+">0</div>
-        <div class="stat-l">Hands-On Projects</div>
-      </div>
-      <div class="stat-card reveal">
-        <div class="stat-ico" style="background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(167,139,250,.15))">🔓</div>
-        <div class="stat-n gp" data-count="100" data-sfx="%">0</div>
-        <div class="stat-l">Free & Open Source</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     ROADMAPS
-═══════════════════════════════════════════════════ -->
-<section class="section" id="roadmaps">
-  <div class="container">
-    <div class="sec-hd tc reveal">
-      <div class="sec-tag">Career Roadmaps</div>
-      <h2 class="sec-title">Your Path to <span class="gt">AI Mastery</span></h2>
-      <p class="sec-sub">Six detailed, week-by-week roadmaps for every career stage and goal. Pick yours and never wonder "what to learn next" again.</p>
-    </div>
-
-    <div class="roads-grid">
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/01-ai-foundations-roadmap.md" target="_blank" class="road-card rc-1 reveal">
-        <div class="road-ico" style="background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(6,182,212,.15))">🌱</div>
-        <div class="road-level" style="color:var(--green-l)">Beginner</div>
-        <div class="road-title">AI Foundations</div>
-        <div class="road-desc">Zero to first ML model. Python, math, scikit-learn. No prior experience needed.</div>
-        <div class="road-meta"><span>📅 12 weeks</span><span>🆓 Free</span><span>📗 40h content</span></div>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/02-ml-engineer-roadmap.md" target="_blank" class="road-card rc-2 reveal">
-        <div class="road-ico" style="background:linear-gradient(135deg,rgba(124,58,237,.2),rgba(6,182,212,.15))">⚡</div>
-        <div class="road-level" style="color:var(--purple-l)">Intermediate</div>
-        <div class="road-title">ML Engineer</div>
-        <div class="road-desc">Production ML systems with PyTorch, MLOps, deployment. For Python devs switching to AI.</div>
-        <div class="road-meta"><span>📅 16 weeks</span><span>💼 Job-ready</span><span>📗 85h content</span></div>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/03-llm-engineer-roadmap.md" target="_blank" class="road-card rc-3 reveal">
-        <div class="road-ico" style="background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(251,191,36,.15))">🤖</div>
-        <div class="road-level" style="color:#FDBA74">Advanced</div>
-        <div class="road-title">LLM Engineer</div>
-        <div class="road-desc">Transformers, RAG, fine-tuning, production LLM apps. The hottest AI track in 2025.</div>
-        <div class="road-meta"><span>📅 12 weeks</span><span>🔥 Trending</span><span>📗 110h content</span></div>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/04-ai-researcher-roadmap.md" target="_blank" class="road-card rc-4 reveal">
-        <div class="road-ico" style="background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(167,139,250,.15))">🔬</div>
-        <div class="road-level" style="color:#F9A8D4">Expert</div>
-        <div class="road-title">AI Researcher</div>
-        <div class="road-desc">Novel research, SOTA models, publications. For those pushing the frontier of AI.</div>
-        <div class="road-meta"><span>📅 24 weeks</span><span>🎓 Research</span><span>📗 150h content</span></div>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/05-prompt-engineer-roadmap.md" target="_blank" class="road-card rc-5 reveal">
-        <div class="road-ico" style="background:linear-gradient(135deg,rgba(167,139,250,.2),rgba(6,182,212,.15))">✨</div>
-        <div class="road-level" style="color:var(--purple-l)">Any Level</div>
-        <div class="road-title">Prompt Engineer</div>
-        <div class="road-desc">CoT, few-shot, ReAct, structured output. Get expert results from any LLM in 3 weeks.</div>
-        <div class="road-meta"><span>📅 3 weeks</span><span>⚡ Fast track</span><span>📗 12h content</span></div>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/06-ai-agent-builder-roadmap.md" target="_blank" class="road-card rc-6 reveal">
-        <div class="road-ico" style="background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(236,72,153,.15))">🕵️</div>
-        <div class="road-level" style="color:#FDBA74">Intermediate</div>
-        <div class="road-title">AI Agent Builder</div>
-        <div class="road-desc">LangGraph, CrewAI, multi-agent systems. Build autonomous AI that thinks, plans, and acts.</div>
-        <div class="road-meta"><span>📅 6 weeks</span><span>🚀 2025 hottest</span><span>📗 30h content</span></div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     RESOURCES & CHEATSHEETS
-═══════════════════════════════════════════════════ -->
-<section class="section" id="resources" style="padding-top:0;">
-  <div class="container">
-    <div class="sec-hd reveal">
-      <div class="sec-tag">Quick Reference</div>
-      <h2 class="sec-title">Cheatsheets &amp; <span class="gt">Deep Dives</span></h2>
-      <p class="sec-sub">Bookmark-worthy reference sheets and comprehensive topic guides for daily use.</p>
-    </div>
-
-    <div class="content-grid">
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/prompt-engineering-cheatsheet.md" target="_blank" class="content-card reveal">
-        <div class="cc-ico">✨</div>
-        <div class="cc-title">Prompt Engineering</div>
-        <div class="cc-desc">Every technique — zero-shot, CoT, ReAct, Tree-of-Thought — with templates and examples.</div>
-        <span class="cc-tag">📋 Cheatsheet</span>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/pytorch-cheatsheet.md" target="_blank" class="content-card reveal">
-        <div class="cc-ico">🔥</div>
-        <div class="cc-title">PyTorch</div>
-        <div class="cc-desc">Tensors, autograd, training loops, mixed precision, torch.compile, save/load.</div>
-        <span class="cc-tag">📋 Cheatsheet</span>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/llm-glossary.md" target="_blank" class="content-card reveal">
-        <div class="cc-ico">🤖</div>
-        <div class="cc-title">LLM Glossary</div>
-        <div class="cc-desc">150+ terms from Attention to Zero-Shot — clearly defined for every level.</div>
-        <span class="cc-tag">📖 Reference</span>
-      </a>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/resources/llms/README.md" target="_blank" class="content-card reveal">
-        <div class="cc-ico">🧬</div>
-        <div class="cc-title">LLMs Deep Dive</div>
-        <div class="cc-desc">Complete guide: model landscape, RAG, fine-tuning, serving, papers.</div>
-        <span class="cc-tag">📚 Resource Guide</span>
-      </a>
-
-      <div class="content-card reveal" style="border-style:dashed;cursor:default;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;">
-        <div style="font-size:2rem">🐍</div>
-        <div class="cc-title">Python for AI</div>
-        <div class="cc-desc" style="font-size:.8rem">NumPy, Pandas, Matplotlib essentials</div>
-        <span class="cc-tag">📋 Coming Soon</span>
-      </div>
-
-      <div class="content-card reveal" style="border-style:dashed;cursor:default;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;">
-        <div style="font-size:2rem">🐋</div>
-        <div class="cc-title">Docker for ML</div>
-        <div class="cc-desc" style="font-size:.8rem">Containerize and ship AI models</div>
-        <span class="cc-tag">📋 Coming Soon</span>
-      </div>
-
-      <div class="content-card reveal" style="border-style:dashed;cursor:default;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;">
-        <div style="font-size:2rem">🧮</div>
-        <div class="cc-title">ML Algorithms</div>
-        <div class="cc-desc" style="font-size:.8rem">When to use what — decision guide</div>
-        <span class="cc-tag">📋 Coming Soon</span>
-      </div>
-
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="content-card reveal" style="background:linear-gradient(135deg,rgba(124,58,237,.1),rgba(6,182,212,.06));border-color:rgba(124,58,237,.25);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;">
-        <div style="font-size:2rem">🤝</div>
-        <div class="cc-title">Contribute</div>
-        <div class="cc-desc" style="font-size:.8rem">Add your favourite resources &amp; help the community grow</div>
-        <span class="cc-tag" style="background:var(--g-main);color:white;">+ Add Resource</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     TERMINAL DEMO
-═══════════════════════════════════════════════════ -->
-<section class="demo-section" id="demo">
-  <div class="container demo-wrap">
-
-    <div class="terminal reveal-l">
-      <div class="term-bar">
-        <div class="td" style="background:#FF5F57"></div>
-        <div class="td" style="background:#FFBD2E"></div>
-        <div class="td" style="background:#28C840"></div>
-        <div class="term-title">llm_engineer.py — AI Magic Mastery</div>
-      </div>
-      <div class="term-body" id="term-body"><!-- Static first frame; JS below animates over this once it loads -->
-        <div><span class="tc-cmt"># 🧠 AI Magic Mastery — LLM Engineer Path</span></div>
-        <div><span class="tc-kw">from</span> <span class="tc-str">transformers</span> <span class="tc-kw">import</span> <span class="tc-fn">AutoTokenizer</span>, <span class="tc-fn">AutoModel</span></div>
-        <div><span class="tc-kw">from</span> <span class="tc-str">unsloth</span> <span class="tc-kw">import</span> <span class="tc-fn">FastLanguageModel</span></div>
-        <div>&nbsp;</div>
-        <div><span class="tc-cmt"># Load Llama 3.2 with QLoRA in 4-bit</span></div>
-        <div>model, tokenizer = <span class="tc-fn">FastLanguageModel</span>.from_pretrained(<span class="tc-cursor"></span></div>
-      </div>
-    </div>
-
-    <div class="reveal-r">
-      <div class="sec-tag">Real Code, Real Results</div>
-      <h2 class="sec-title">Learn by <span class="gt">Building</span></h2>
-      <p class="sec-sub" style="margin-bottom:28px">Every roadmap comes with real, runnable code. From your first neural network to deploying a production LLM API.</p>
-
-      <div class="demo-pts">
-        <div class="demo-pt"><span class="ck">✓</span><span>Copy-paste code that actually works in 2025</span></div>
-        <div class="demo-pt"><span class="ck">✓</span><span>PyTorch, LangChain, Hugging Face, vLLM, and more</span></div>
-        <div class="demo-pt"><span class="ck">✓</span><span>Explains why — not just what to type</span></div>
-        <div class="demo-pt"><span class="ck">✓</span><span>Updated monthly with the latest libraries & APIs</span></div>
-        <div class="demo-pt"><span class="ck">✓</span><span>25 full project starter kits included</span></div>
-      </div>
-
-      <div style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="btn btn-p">
-          Browse the Code →
-        </a>
-        <a href="#roadmaps" class="btn btn-o">Start a Roadmap</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     PROJECT IDEAS
-═══════════════════════════════════════════════════ -->
-<section class="section" id="projects">
-  <div class="container">
-    <div class="sec-hd tc reveal">
-      <div class="sec-tag">Build Things</div>
-      <h2 class="sec-title">25+ Project Ideas <span class="gt">With Starter Code</span></h2>
-      <p class="sec-sub">The fastest way to learn AI is to build. Every project has a goal, stack, dataset, and key learnings defined.</p>
-    </div>
-
-    <div class="projects-grid">
-
-      <div class="proj-card pj-1 reveal">
-        <div class="proj-lvl" style="color:var(--green-l)">🌱 Beginner</div>
-        <div class="proj-title">🏠 House Price Predictor</div>
-        <div class="proj-desc">Regression on Ames Housing dataset. Feature engineering, EDA, model evaluation.</div>
-        <div class="proj-stack">
-          <span class="tech-tag">Pandas</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">XGBoost</span>
-        </div>
-      </div>
-
-      <div class="proj-card pj-2 reveal">
-        <div class="proj-lvl" style="color:var(--purple-l)">⚡ Intermediate</div>
-        <div class="proj-title">📄 PDF Chat (RAG)</div>
-        <div class="proj-desc">Chat with your documents using RAG, ChromaDB, and an LLM. Deploy to Streamlit.</div>
-        <div class="proj-stack">
-          <span class="tech-tag">LangChain</span><span class="tech-tag">ChromaDB</span><span class="tech-tag">Streamlit</span>
-        </div>
-      </div>
-
-      <div class="proj-card pj-3 reveal">
-        <div class="proj-lvl" style="color:#FDBA74">🔥 Advanced</div>
-        <div class="proj-title">🕵️ Multi-Agent Researcher</div>
-        <div class="proj-desc">CrewAI agent team: researcher → writer → editor. Produces full research reports autonomously.</div>
-        <div class="proj-stack">
-          <span class="tech-tag">CrewAI</span><span class="tech-tag">Tavily</span><span class="tech-tag">GPT-4o</span>
-        </div>
-      </div>
-
-      <div class="proj-card pj-4 reveal">
-        <div class="proj-lvl" style="color:var(--purple-l)">⚡ Intermediate</div>
-        <div class="proj-title">🎙️ Voice AI Assistant</div>
-        <div class="proj-desc">Full pipeline: Whisper → LLM → TTS. Real-time voice interface for any LLM.</div>
-        <div class="proj-stack">
-          <span class="tech-tag">Whisper</span><span class="tech-tag">ElevenLabs</span><span class="tech-tag">FastAPI</span>
-        </div>
-      </div>
-
-      <div class="proj-card pj-5 reveal">
-        <div class="proj-lvl" style="color:#FDBA74">🔥 Advanced</div>
-        <div class="proj-title">🏗️ Fine-tuned Domain LLM</div>
-        <div class="proj-desc">QLoRA fine-tune Llama 3.2 on your domain. Export GGUF, deploy with Ollama.</div>
-        <div class="proj-stack">
-          <span class="tech-tag">Unsloth</span><span class="tech-tag">QLoRA</span><span class="tech-tag">TRL</span>
-        </div>
-      </div>
-
-      <div class="proj-card pj-6 reveal" style="border-style:dashed;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;cursor:pointer;" onclick="window.open('https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/projects/README.md','_blank')">
-        <div style="font-size:2rem">💡</div>
-        <div class="proj-title">See All 25 Projects</div>
-        <div class="proj-desc" style="font-size:.82rem">Beginner, intermediate, and production-grade ideas with full implementation guides.</div>
-        <span style="font-size:.8125rem;color:var(--purple-l);font-weight:600;">View on GitHub →</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     INTERVIEW PREP
-═══════════════════════════════════════════════════ -->
-<section class="ticker-section" id="interview">
-  <div class="container">
-    <div class="sec-hd tc reveal" style="margin-bottom:36px;">
-      <div class="sec-tag">Get Hired</div>
-      <h2 class="sec-title">AI Interview Questions <span class="gt">with Full Answers</span></h2>
-      <p class="sec-sub">The kinds of questions top AI companies actually ask — ML theory, deep learning, LLMs, MLOps, and coding — each with a clear, worked answer. A growing, open bank.</p>
-    </div>
-
-    <div class="ticker-wrap reveal">
-      <div class="ticker-head">
-        <span style="font-size:1.2rem">🎯</span>
-        <h3>Sample Questions</h3>
-        <div class="ticker-count">Growing every month →</div>
-      </div>
-      <div class="questions-list" id="q-list"><!-- Static fallback; JS below replaces with the full set -->
-        <div class="q-item">
-          <span class="q-cat" style="background:rgba(124,58,237,.12);color:#A78BFA">ML Theory</span>
-          <span class="q-text">Explain the bias-variance tradeoff with a real example.</span>
-          <span class="q-diff diff-e">Easy</span>
-        </div>
-        <div class="q-item">
-          <span class="q-cat" style="background:rgba(6,182,212,.1);color:#67E8F9">Deep Learning</span>
-          <span class="q-text">How does backpropagation work? Explain the chain rule application.</span>
-          <span class="q-diff diff-m">Medium</span>
-        </div>
-        <div class="q-item">
-          <span class="q-cat" style="background:rgba(236,72,153,.1);color:#F9A8D4">LLMs</span>
-          <span class="q-text">When would you use RAG vs fine-tuning? What are the tradeoffs?</span>
-          <span class="q-diff diff-m">Medium</span>
-        </div>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top:28px;">
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/interview-prep/README.md" target="_blank" class="btn btn-p">
-        Explore the Question Bank →
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     COMMUNITY / CONTRIBUTORS
-═══════════════════════════════════════════════════ -->
-<section class="community-section" id="community">
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-
-  <div class="container" style="position:relative;z-index:1;">
-    <div class="sec-hd tc reveal">
-      <div class="sec-tag">Open Source Community</div>
-      <h2 class="sec-title">Built by the <span class="gt">AI Community</span></h2>
-      <p class="sec-sub">Open-source and built in public. Every resource is hand-vetted — and there's an open seat for you to help shape what comes next.</p>
-    </div>
-
-    <div class="contrib-grid">
-      <div class="contrib-card reveal">
-        <div class="contrib-av">👨‍💻</div>
-        <div class="contrib-name">Abid Redwan</div>
-        <div class="contrib-role">Creator & Maintainer</div>
-        <div class="contrib-prs">CodeBeez · Core</div>
-      </div>
-      <div class="contrib-card reveal">
-        <div class="contrib-av">📚</div>
-        <div class="contrib-name">Resource Curators</div>
-        <div class="contrib-role">Share your best finds</div>
-        <div class="contrib-prs" style="color:var(--green-l)">Open — contribute →</div>
-      </div>
-      <div class="contrib-card reveal">
-        <div class="contrib-av">🗺️</div>
-        <div class="contrib-name">Roadmap Authors</div>
-        <div class="contrib-role">Help expand the paths</div>
-        <div class="contrib-prs" style="color:var(--green-l)">Open — contribute →</div>
-      </div>
-      <div class="contrib-card reveal">
-        <div class="contrib-av">🎯</div>
-        <div class="contrib-name">Interview Prep</div>
-        <div class="contrib-role">Add questions &amp; answers</div>
-        <div class="contrib-prs" style="color:var(--green-l)">Open — contribute →</div>
-      </div>
-      <div class="contrib-card reveal">
-        <div class="contrib-av">🎨</div>
-        <div class="contrib-name">Guide Writers</div>
-        <div class="contrib-role">Pick a topic, go deep</div>
-        <div class="contrib-prs" style="color:var(--green-l)">Open — contribute →</div>
-      </div>
-      <div class="contrib-card reveal" style="cursor:pointer;" onclick="window.open('https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CONTRIBUTING.md','_blank')">
-        <div class="contrib-av" style="font-size:1.4rem">✨</div>
-        <div class="contrib-name">You?</div>
-        <div class="contrib-role">Be an early contributor</div>
-        <div class="contrib-prs" style="color:var(--green-l)">Start here →</div>
-      </div>
-    </div>
-
-    <!-- Socials -->
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:12px;" class="reveal">
-      <a href="https://discord.gg/codebeez" target="_blank" class="btn btn-g">
-        💬 Join the Discord
-      </a>
-      <a href="https://x.com/codebeezai" target="_blank" class="btn btn-g">
-        𝕏 Follow @CodeBeezAI
-      </a>
-      <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="btn btn-g">
-        ⭐ Star on GitHub
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     CTA
-═══════════════════════════════════════════════════ -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-box reveal">
-      <div class="sec-tag" style="justify-content:center;margin-bottom:16px;">Free. Open Source. Forever.</div>
-      <h2 class="cta-title">
-        ⭐ Star the Repo.<br/>
-        <span class="gt">Change Your AI Career.</span>
-      </h2>
-      <p class="cta-sub">Everything you need to go from zero to AI expert — completely free, community-driven, and always up to date.</p>
-      <div class="cta-btns">
-        <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="btn btn-p btn-lg">
-          ⭐ Star on GitHub
-        </a>
-        <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CONTRIBUTING.md" target="_blank" class="btn btn-o btn-lg">
-          🤝 Contribute
-        </a>
-      </div>
-      <div class="cta-badges">
-        <span class="cbadge"><span class="dot"></span> MIT License</span>
-        <span class="cbadge"><span class="dot"></span> Updated monthly</span>
-        <span class="cbadge"><span class="dot"></span> Built in the open</span>
-        <span class="cbadge"><span class="dot"></span> PRs welcome</span>
-        <span class="cbadge"><span class="dot"></span> No ads, no paywalls</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="nav-logo" style="margin-bottom:0;">
-          <div class="logo-orb" style="width:30px;height:30px;font-size:.9rem;">🧠</div>
-          <div style="font-size:1rem;">AI Magic Mastery<span class="logo-sub">by CodeBeez</span></div>
-        </div>
-        <p>The most comprehensive AI learning repository on GitHub. Free, open-source, community-driven. Maintained by Abid Redwan & CodeBeez.</p>
-        <div class="social-row">
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" class="soc" title="GitHub">⌥</a>
-          <a href="https://x.com/codebeezai" target="_blank" class="soc" title="Twitter/X">𝕏</a>
-          <a href="https://discord.gg/codebeez" target="_blank" class="soc" title="Discord">💬</a>
-          <a href="https://linkedin.com/in/abidredwan" target="_blank" class="soc" title="LinkedIn">in</a>
-          <a href="https://youtube.com/@codebeez" target="_blank" class="soc" title="YouTube">▶</a>
-        </div>
-      </div>
-
       <div>
-        <div class="foot-col-title">Roadmaps</div>
-        <div class="foot-links">
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/01-ai-foundations-roadmap.md" target="_blank">🌱 AI Foundations</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/02-ml-engineer-roadmap.md" target="_blank">⚡ ML Engineer</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/03-llm-engineer-roadmap.md" target="_blank">🤖 LLM Engineer</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/05-prompt-engineer-roadmap.md" target="_blank">✨ Prompt Engineer</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/06-ai-agent-builder-roadmap.md" target="_blank">🕵️ Agent Builder</a>
+        <div class="fc-t">Roadmaps</div>
+        <div class="fc-l">
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/01-ai-foundations-roadmap.md" target="_blank" rel="noopener">🌱 AI Foundations</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/02-ml-engineer-roadmap.md" target="_blank" rel="noopener">⚡ ML Engineer</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/03-llm-engineer-roadmap.md" target="_blank" rel="noopener">🤖 LLM Engineer</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/05-prompt-engineer-roadmap.md" target="_blank" rel="noopener">✨ Prompt Engineer</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/06-ai-agent-builder-roadmap.md" target="_blank" rel="noopener">🕵️ Agent Builder</a>
         </div>
       </div>
-
       <div>
-        <div class="foot-col-title">Resources</div>
-        <div class="foot-links">
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/prompt-engineering-cheatsheet.md" target="_blank">Prompt Engineering</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/pytorch-cheatsheet.md" target="_blank">PyTorch Cheatsheet</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/llm-glossary.md" target="_blank">LLM Glossary</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/resources/llms/README.md" target="_blank">LLMs Deep Dive</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/interview-prep/README.md" target="_blank">Interview Prep</a>
+        <div class="fc-t">Resources</div>
+        <div class="fc-l">
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/prompt-engineering-cheatsheet.md" target="_blank" rel="noopener">Prompt Engineering</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/pytorch-cheatsheet.md" target="_blank" rel="noopener">PyTorch Cheatsheet</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/cheatsheets/llm-glossary.md" target="_blank" rel="noopener">LLM Glossary</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/resources/llms/README.md" target="_blank" rel="noopener">LLMs Deep Dive</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/interview-prep/README.md" target="_blank" rel="noopener">Interview Prep</a>
         </div>
       </div>
-
       <div>
-        <div class="foot-col-title">Community</div>
-        <div class="foot-links">
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a>
-          <a href="https://discord.gg/codebeez" target="_blank">Discord</a>
-          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CHANGELOG.md" target="_blank">Changelog</a>
-          <a href="https://aimagicmastery.codebeez.ai" target="_blank">Full Platform</a>
+        <div class="fc-t">Community</div>
+        <div class="fc-l">
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a>
+          <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog</a>
+          <a href="https://aimagicmastery.codebeez.ai" target="_blank" rel="noopener">Full Platform</a>
           <a href="mailto:hello@codebeez.ai">Contact</a>
         </div>
       </div>
     </div>
-
-    <div class="foot-bottom">
-      <span>© 2025 CodeBeez Inc. — Made with 🧠 &amp; ❤️ by <a href="https://github.com/aredwan-xyz" target="_blank">Abid Redwan</a></span>
-      <span>MIT License · <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank">⭐ Star on GitHub</a></span>
+    <div class="foot-base">
+      <span>© 2026 CodeBeez Inc. — Made with 🧠 &amp; ❤️ by <a href="https://github.com/aredwan-xyz" target="_blank" rel="noopener">Abid Redwan</a></span>
+      <span>MIT License · <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources" target="_blank" rel="noopener">⭐ Star on GitHub</a></span>
     </div>
   </div>
 </footer>
 
-<!-- Toast -->
-<div class="toast" id="toast">
-  <div class="toast-ico" id="t-ico"></div>
-  <div class="toast-t"><strong id="t-title"></strong><span id="t-msg"></span></div>
-</div>
-
+<div class="toast" id="toast"><div id="toast-ico" style="font-size:1.25rem"></div><div><strong id="toast-t"></strong><span id="toast-m"></span></div></div>
 
 <!-- ═══════════════════════════════════════════════════
-     JAVASCRIPT
-═══════════════════════════════════════════════════ */
+     SCRIPTS — each isolated in its own try/caught IIFE
+═══════════════════════════════════════════════════ -->
+
 <script>
-/* Each feature below runs in its own isolated, try/caught IIFE.
-   A failure in one (e.g. a blocked canvas API) can never take
-   down the others — every block owns its own failure domain. */
-
-/* ── Stars canvas ─────────────────────────────────── */
+/* scroll progress + nav state */
 (function(){ 'use strict'; try {
-  const c = document.getElementById('stars');
-  const ctx = c.getContext('2d');
-  let W, H;
-  function resize(){ W = c.width = innerWidth; H = c.height = innerHeight; }
-  resize();
-  addEventListener('resize', resize);
-
-  const pts = Array.from({length:80}, () => ({
-    x: Math.random()*2000, y: Math.random()*1200,
-    vx:(Math.random()-.5)*.25, vy:(Math.random()-.5)*.25,
-    r:Math.random()*1.2+.3, a:Math.random()*.45+.08
-  }));
-
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    for(let i=0;i<pts.length;i++){
-      const p=pts[i];
-      p.x=(p.x+p.vx+W)%W; p.y=(p.y+p.vy+H)%H;
-      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(167,139,250,${p.a})`; ctx.fill();
-    }
-    for(let i=0;i<pts.length;i++){
-      for(let j=i+1;j<pts.length;j++){
-        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y;
-        const d=Math.sqrt(dx*dx+dy*dy);
-        if(d<130){ ctx.beginPath(); ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y);
-          ctx.strokeStyle=`rgba(124,58,237,${.07*(1-d/130)})`; ctx.lineWidth=.5; ctx.stroke(); }
-      }
-    }
-    requestAnimationFrame(draw);
+  const bar = document.getElementById('progress');
+  const nav = document.getElementById('nav');
+  function onScroll(){
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    nav.classList.toggle('on', h.scrollTop > 20);
   }
-  draw();
-} catch(e){ console.error('[stars]', e); } })();
+  addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+} catch(e){ console.error('[progress]', e); } })();
 </script>
 
 <script>
-/* ── Navbar, mobile menu & scroll-reveal ───────────── */
+/* mobile sheet */
 (function(){ 'use strict'; try {
-  const nav = document.getElementById('nav');
-  addEventListener('scroll', () => nav.classList.toggle('scroll', scrollY > 20), {passive:true});
-
-  const hb = document.getElementById('hb');
-  const mob = document.getElementById('mob');
-  hb.addEventListener('click', () => {
-    mob.classList.toggle('open');
-    const s = hb.querySelectorAll('span');
-    const o = mob.classList.contains('open');
-    if(o){ s[0].style.transform='rotate(45deg) translate(5px,5px)'; s[1].style.opacity='0'; s[2].style.transform='rotate(-45deg) translate(5px,-5px)'; }
-    else { s.forEach(x=>{x.style.transform='';x.style.opacity='';}); }
-  });
+  const b = document.getElementById('burger');
+  const s = document.getElementById('sheet');
+  b.addEventListener('click', () => s.classList.toggle('open'));
   document.addEventListener('click', e => {
-    if(!hb.contains(e.target)&&!mob.contains(e.target)){
-      mob.classList.remove('open');
-      hb.querySelectorAll('span').forEach(x=>{x.style.transform='';x.style.opacity='';});
-    }
+    if(!b.contains(e.target) && !s.contains(e.target)) s.classList.remove('open');
   });
+  s.querySelectorAll('a').forEach(a => a.addEventListener('click', () => s.classList.remove('open')));
+} catch(e){ console.error('[sheet]', e); } })();
+</script>
 
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach((e,i) => {
-      if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('on'), (i%5)*80); obs.unobserve(e.target); }
+<script>
+/* reveal on scroll */
+(function(){ 'use strict'; try {
+  const obs = new IntersectionObserver(es => {
+    es.forEach((en,i) => {
+      if(en.isIntersecting){ setTimeout(() => en.target.classList.add('go'), (i%4)*70); obs.unobserve(en.target); }
     });
   }, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => obs.observe(el));
-} catch(e){ console.error('[nav/reveal]', e); } })();
+  document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+} catch(e){ console.error('[reveal]', e); } })();
 </script>
 
 <script>
-/* ── Counter animation ────────────────────────────── */
+/* counters */
 (function(){ 'use strict'; try {
-  function counter(el, target, sfx, dur=2000){
-    const isFloat = String(target).includes('.');
-    let start=0, step=target/(dur/16);
-    const t = setInterval(()=>{
-      start = Math.min(start+step, target);
-      el.textContent = (isFloat ? start.toFixed(1) : Math.round(start).toLocaleString()) + sfx;
-      if(start>=target) clearInterval(t);
-    },16);
+  function run(el){
+    const target = parseFloat(el.dataset.n), sfx = el.dataset.sfx || '';
+    let v = 0; const step = target / (1600/16);
+    const t = setInterval(() => {
+      v = Math.min(v + step, target);
+      el.textContent = Math.round(v).toLocaleString() + sfx;
+      if(v >= target) clearInterval(t);
+    }, 16);
   }
-  const cObs = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        const el=e.target, c=el.dataset.count, sfx=el.dataset.sfx||'';
-        counter(el, parseFloat(c), sfx);
-        cObs.unobserve(el);
-      }
-    });
-  },{threshold:.5});
-  document.querySelectorAll('[data-count]').forEach(el=>cObs.observe(el));
+  const obs = new IntersectionObserver(es => {
+    es.forEach(en => { if(en.isIntersecting){ run(en.target); obs.unobserve(en.target); } });
+  }, {threshold:.5});
+  document.querySelectorAll('[data-n]').forEach(el => obs.observe(el));
 } catch(e){ console.error('[counters]', e); } })();
 </script>
 
 <script>
-/* ── Terminal typewriter ──────────────────────────── */
+/* marquee: duplicate track content for a seamless loop */
 (function(){ 'use strict'; try {
-  const lines = [
-    {d:200,  h:'<span class="tc-cmt"># 🧠 AI Magic Mastery — LLM Engineer Path</span>'},
-    {d:700,  h:'<span class="tc-kw">from</span> <span class="tc-str">transformers</span> <span class="tc-kw">import</span> <span class="tc-fn">AutoTokenizer</span>, <span class="tc-fn">AutoModel</span>'},
-    {d:1200, h:'<span class="tc-kw">from</span> <span class="tc-str">unsloth</span> <span class="tc-kw">import</span> <span class="tc-fn">FastLanguageModel</span>'},
-    {d:1700, h:''},
-    {d:1900, h:'<span class="tc-cmt"># Load Llama 3.2 with QLoRA in 4-bit</span>'},
-    {d:2300, h:'model, tokenizer = <span class="tc-fn">FastLanguageModel</span>.from_pretrained('},
-    {d:2600, h:'  model_name=<span class="tc-str">"unsloth/llama-3.2-3b-bnb-4bit"</span>,'},
-    {d:2900, h:'  max_seq_length=<span class="tc-num">4096</span>, load_in_4bit=<span class="tc-kw">True</span>'},
-    {d:3100, h:')'},
-    {d:3600, h:''},
-    {d:3800, h:'<span class="tc-cmt"># Fine-tune with LoRA</span>'},
-    {d:4200, h:'model = <span class="tc-fn">FastLanguageModel</span>.get_peft_model('},
-    {d:4500, h:'  model, r=<span class="tc-num">16</span>, lora_alpha=<span class="tc-num">16</span>'},
-    {d:4700, h:')'},
-    {d:5200, h:''},
-    {d:5400, h:'<span class="tc-cmt"># ✅ Training complete — GGUF export</span>'},
-    {d:5900, h:'model.save_pretrained_gguf(<span class="tc-str">"my_llm"</span>, tokenizer)'},
-    {d:6500, h:'<span class="tc-out">→ Saved: my_llm.Q4_K_M.gguf (2.1 GB)</span>'},
-    {d:7000, h:'<span class="tc-out">→ Deploy with Ollama: ollama run ./my_llm.gguf</span>'},
-    {d:7500, h:'<span class="tc-out">→ 🚀 Your custom LLM is live!</span>'},
-  ];
-
-  const tb = document.getElementById('term-body');
-  const cur = Object.assign(document.createElement('span'),{className:'tc-cursor'});
-  tb.appendChild(cur);
-
-  function runTerminal(){
-    tb.innerHTML=''; tb.appendChild(cur);
-    lines.forEach(({d,h})=>{
-      setTimeout(()=>{
-        const row=document.createElement('div');
-        row.innerHTML=h||'&nbsp;';
-        tb.insertBefore(row,cur);
-        tb.scrollTop=tb.scrollHeight;
-      },d);
-    });
-  }
-  runTerminal();
-  setInterval(runTerminal, 10000);
-} catch(e){ console.error('[terminal]', e); } })();
+  const t = document.getElementById('mq-track');
+  t.innerHTML += t.innerHTML;
+} catch(e){ console.error('[marquee]', e); } })();
 </script>
 
 <script>
-/* ── Interview questions list ─────────────────────── */
+/* clone-command copy */
 (function(){ 'use strict'; try {
-  const questions = [
-    {cat:'ML Theory',  color:'#A78BFA', bg:'rgba(124,58,237,.12)', q:'Explain the bias-variance tradeoff with a real example.', diff:'Easy',   dc:'diff-e'},
-    {cat:'Deep Learning', color:'#67E8F9', bg:'rgba(6,182,212,.1)', q:'How does backpropagation work? Explain the chain rule application.', diff:'Medium', dc:'diff-m'},
-    {cat:'LLMs',       color:'#F9A8D4', bg:'rgba(236,72,153,.1)', q:'When would you use RAG vs fine-tuning? What are the tradeoffs?', diff:'Medium', dc:'diff-m'},
-    {cat:'Coding',     color:'#34D399', bg:'rgba(16,185,129,.1)', q:'Implement scaled dot-product attention in PyTorch from scratch.', diff:'Hard',   dc:'diff-h'},
-    {cat:'MLOps',      color:'#FCD34D', bg:'rgba(245,158,11,.1)', q:'How do you detect and handle data drift in production ML systems?', diff:'Medium', dc:'diff-m'},
-    {cat:'LLMs',       color:'#F9A8D4', bg:'rgba(236,72,153,.1)', q:'Explain how LoRA works. What is the mathematical intuition?', diff:'Hard',   dc:'diff-h'},
-    {cat:'ML Theory',  color:'#A78BFA', bg:'rgba(124,58,237,.12)', q:'What is L1 vs L2 regularization? When do you use each?', diff:'Easy',   dc:'diff-e'},
-    {cat:'Deep Learning', color:'#67E8F9', bg:'rgba(6,182,212,.1)', q:'What is self-attention? How is it different from cross-attention?', diff:'Medium', dc:'diff-m'},
-  ];
-
-  const ql = document.getElementById('q-list');
-  ql.innerHTML = questions.map(q => `
-      <div class="q-item">
-        <span class="q-cat" style="background:${q.bg};color:${q.color}">${q.cat}</span>
-        <span class="q-text">${q.q}</span>
-        <span class="q-diff ${q.dc}">${q.diff}</span>
-      </div>`).join('');
-} catch(e){ console.error('[questions]', e); } })();
+  const btn = document.getElementById('clone-btn');
+  const CMD = 'git clone https://github.com/aredwan-xyz/ai-mastery-ultimate-resources.git';
+  btn.addEventListener('click', () => {
+    const done = () => { btn.textContent = '✓ Copied'; setTimeout(() => { btn.innerHTML = '⧉ Copy'; }, 1800); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(CMD).then(done).catch(done);
+    } else { done(); }
+  });
+} catch(e){ console.error('[clone]', e); } })();
 </script>
 
 <script>
-/* ── Toast notifications ──────────────────────────── */
+/* roadmap explorer */
 (function(){ 'use strict'; try {
-  function toast(ico, title, msg, dur=3200){
-    const t=document.getElementById('toast');
-    document.getElementById('t-ico').textContent=ico;
-    document.getElementById('t-title').textContent=title;
-    document.getElementById('t-msg').textContent=msg;
-    t.classList.add('show');
-    setTimeout(()=>t.classList.remove('show'), dur);
+  const BASE = 'https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/roadmaps/';
+  const tracks = [
+    { em:'🌱', name:'AI Foundations', lvl:'Beginner', lc:'rgba(52,211,153,.14)', lt:'var(--mint)',
+      weeks:'12 weeks', extra:'🆓 Free resources', file:'01-ai-foundations-roadmap.md',
+      desc:'Zero to your first working ML model. Python, math intuition, scikit-learn, and your first neural network — no prior experience needed.',
+      steps:[['Python & the data stack','Weeks 1–3 · variables → pandas → git'],['Math that matters','Weeks 4–5 · linear algebra & stats, visually'],['Core machine learning','Weeks 6–9 · regression → trees → evaluation'],['Neural networks & capstones','Weeks 10–12 · PyTorch, MNIST, 2 portfolio projects']] },
+    { em:'⚡', name:'ML Engineer', lvl:'Intermediate', lc:'rgba(124,58,237,.15)', lt:'var(--violet-l)',
+      weeks:'16 weeks', extra:'💼 Job-ready track', file:'02-ml-engineer-roadmap.md',
+      desc:'Production ML systems: the modern stack, gradient boosting, PyTorch, and the MLOps skills that separate data scientists from ML engineers.',
+      steps:[['Foundations refresher','Weeks 1–3 · data stack, math intuition, sklearn fluency'],['Core ML & feature engineering','Weeks 4–7 · boosting, tuning, a live Kaggle entry'],['Deep learning for engineers','Weeks 8–10 · PyTorch, transfer learning, tabular judgment'],['MLOps & capstone','Weeks 11–16 · tracking, serving, Docker/CI, deployed system']] },
+    { em:'🤖', name:'LLM Engineer', lvl:'Advanced', lc:'rgba(251,191,36,.13)', lt:'var(--amber)',
+      weeks:'12 weeks', extra:'🔥 Hottest track', file:'03-llm-engineer-roadmap.md',
+      desc:'Transformers from first principles, then RAG systems, fine-tuning with LoRA/QLoRA, agents, and serving LLMs in production.',
+      steps:[['Understanding LLMs','Weeks 1–2 · attention, tokenizers, the model zoo'],['APIs, prompting & embeddings','Weeks 3–4 · chat apps, semantic search'],['RAG & fine-tuning','Weeks 5–8 · vector DBs, Unsloth, evaluation'],['Agents & production','Weeks 9–12 · LangGraph, vLLM, monitoring, capstone']] },
+    { em:'🔬', name:'AI Researcher', lvl:'Expert', lc:'rgba(6,182,212,.13)', lt:'var(--cyan-l)',
+      weeks:'24 weeks', extra:'🎓 Research track', file:'04-ai-researcher-roadmap.md',
+      desc:'Mathematical depth, building everything from scratch, reproducing papers, and running your first rigorous, original research project.',
+      steps:[['Mathematical foundations','Weeks 1–4 · matrix calculus, probability, optimization'],['Deep learning theory','Weeks 5–9 · from-scratch builds, transformers, generative models'],['Reading & reproducing research','Weeks 10–14 · three-pass reading, full paper reproduction'],['Original research','Weeks 15–24 · find the gap, rigorous experiments, write & submit']] },
+    { em:'✨', name:'Prompt Engineer', lvl:'Any level', lc:'rgba(167,139,250,.15)', lt:'var(--violet-l)',
+      weeks:'3 weeks', extra:'⚡ Fast track', file:'05-prompt-engineer-roadmap.md',
+      desc:'The fastest on-ramp into AI work: master zero-shot, few-shot, chain-of-thought, ReAct, and production prompt engineering in three focused weeks.',
+      steps:[['Foundations & core techniques','Week 1 · how LLMs work, CoT, roles, system prompts'],['Advanced techniques','Week 2 · structured output, ToT, self-consistency, chaining'],['Production practice','Week 3 · templates, versioning, evaluation, anti-patterns']] },
+    { em:'🕵️', name:'Agent Builder', lvl:'Intermediate', lc:'rgba(251,113,133,.13)', lt:'var(--rose)',
+      weeks:'6 weeks', extra:'🚀 Newest field', file:'06-ai-agent-builder-roadmap.md',
+      desc:'Build AI that perceives, plans, and acts: agents from scratch, LangGraph, memory systems, multi-agent teams with CrewAI, and production hardening.',
+      steps:[['Agent fundamentals','Week 1 · the loop, tools, your first agent from scratch'],['LangGraph & memory','Weeks 2–3 · stateful graphs, vector & episodic memory'],['Multi-agent systems','Week 4 · CrewAI teams, roles, orchestration'],['Production & capstone','Weeks 5–6 · retries, monitoring, a real autonomous system']] }
+  ];
+
+  const tabsEl = document.getElementById('rx-tabs');
+  const panel = document.getElementById('rx-panel');
+
+  function renderPanel(t){
+    panel.innerHTML =
+      '<div class="rx-fade">' +
+        '<div class="rxp-head">' +
+          '<span style="font-size:2rem">' + t.em + '</span>' +
+          '<span class="rxp-title">' + t.name + '</span>' +
+          '<span class="rxp-lvl" style="background:' + t.lc + ';color:' + t.lt + '">' + t.lvl + '</span>' +
+        '</div>' +
+        '<div class="rxp-meta"><span>📅 ' + t.weeks + '</span><span>' + t.extra + '</span></div>' +
+        '<p class="rxp-desc">' + t.desc + '</p>' +
+        '<div class="rxp-steps">' +
+          t.steps.map(function(s,i){
+            return '<div class="rxp-step"><div class="rxp-dot">' + (i+1) + '</div>' +
+                   '<div class="rxp-step-t">' + s[0] + '<span>' + s[1] + '</span></div></div>';
+          }).join('') +
+        '</div>' +
+        '<a class="bt bt-hero" href="' + BASE + t.file + '" target="_blank" rel="noopener">Open this roadmap →</a>' +
+      '</div>';
   }
 
-  const toasts=[
-    ['⭐','Star it on GitHub','Help more people discover this repo'],
-    ['🍴','Fork & make it yours','Everything is MIT licensed'],
-    ['🎉','Open for contributions','Add a resource, roadmap, or guide'],
-    ['🌟','100% free, forever','No ads, no paywalls'],
-    ['🗺️','6 career roadmaps','Beginner → AI researcher'],
-  ];
-  let ti=0;
-  setTimeout(()=>{ toast(...toasts[ti%toasts.length]); ti++; }, 4000);
-  setInterval(()=>{ toast(...toasts[ti%toasts.length]); ti++; }, 16000);
-} catch(e){ console.error('[toasts]', e); } })();
-</script>
-
-<script>
-/* ── Smooth active nav ────────────────────────────── */
-(function(){ 'use strict'; try {
-  const secEls = document.querySelectorAll('section[id]');
-  const navAs = document.querySelectorAll('.nav-links a[href^="#"]');
-  const sObs = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting) navAs.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+e.target.id));
+  tracks.forEach(function(t,i){
+    const b = document.createElement('button');
+    b.className = 'rx-tab' + (i===0 ? ' live' : '');
+    b.setAttribute('role','tab');
+    b.innerHTML = '<span class="em">' + t.em + '</span><span><span class="tt">' + t.name + '</span><span class="ts">' + t.lvl + ' · ' + t.weeks + '</span></span>';
+    b.addEventListener('click', function(){
+      tabsEl.querySelectorAll('.rx-tab').forEach(function(x){ x.classList.remove('live'); });
+      b.classList.add('live');
+      renderPanel(t);
     });
-  },{threshold:.4});
-  secEls.forEach(s=>sObs.observe(s));
-} catch(e){ console.error('[active-nav]', e); } })();
+    tabsEl.appendChild(b);
+  });
+  renderPanel(tracks[0]);
+} catch(e){ console.error('[roadmaps]', e); } })();
 </script>
 
-<!-- Live GitHub star count (graceful — stays "★" if unavailable or zero) -->
 <script>
-(function(){
+/* interview accordion */
+(function(){ 'use strict'; try {
+  document.querySelectorAll('.qa-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const item = this.closest('.qa-item');
+      const ans = item.querySelector('.qa-a');
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.qa-item.open').forEach(function(o){
+        o.classList.remove('open');
+        o.querySelector('.qa-a').style.maxHeight = '0';
+      });
+      if(!open){
+        item.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+} catch(e){ console.error('[qa]', e); } })();
+</script>
+
+<script>
+/* confetti on star CTAs */
+(function(){ 'use strict'; try {
+  const cv = document.getElementById('confetti');
+  const cx = cv.getContext('2d');
+  function size(){ cv.width = innerWidth; cv.height = innerHeight; }
+  size(); addEventListener('resize', size);
+  const colors = ['#7C3AED','#06B6D4','#34D399','#FBBF24','#FB7185','#A78BFA'];
+  let ps = [], raf = null;
+  function burst(x,y){
+    for(let i=0;i<75;i++){
+      const a = Math.random()*Math.PI*2, sp = Math.random()*7+3;
+      ps.push({x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-3,s:Math.random()*6+4,c:colors[(Math.random()*colors.length)|0],r:Math.random()*360,vr:(Math.random()-.5)*12,l:1});
+    }
+    if(!raf) tick();
+  }
+  function tick(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    ps.forEach(function(p){
+      p.vy += .18; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.l -= .012;
+      cx.save(); cx.translate(p.x,p.y); cx.rotate(p.r*Math.PI/180);
+      cx.globalAlpha = Math.max(p.l,0); cx.fillStyle = p.c;
+      cx.fillRect(-p.s/2,-p.s/2,p.s,p.s*.6); cx.restore();
+    });
+    ps = ps.filter(function(p){ return p.l > 0 && p.y < cv.height + 60; });
+    raf = ps.length ? requestAnimationFrame(tick) : null;
+  }
+  ['hero-star','mega-star'].forEach(function(id){
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('click', function(e){ burst(e.clientX, e.clientY); });
+  });
+} catch(e){ console.error('[confetti]', e); } })();
+</script>
+
+<script>
+/* live star count (graceful — shows "★" if unavailable) */
+(function(){ 'use strict'; try {
   fetch('https://api.github.com/repos/aredwan-xyz/ai-mastery-ultimate-resources')
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(d){
-      if (d && typeof d.stargazers_count === 'number' && d.stargazers_count > 0) {
-        var el = document.getElementById('star-count');
-        if (el) el.textContent = '★ ' + d.stargazers_count.toLocaleString();
+      if(d && typeof d.stargazers_count === 'number' && d.stargazers_count > 0){
+        const el = document.getElementById('star-n');
+        if(el) el.textContent = d.stargazers_count.toLocaleString();
       }
-    })
-    .catch(function(){});
-})();
+    }).catch(function(){});
+} catch(e){ console.error('[stars]', e); } })();
+</script>
+
+<script>
+/* occasional value-prop toasts */
+(function(){ 'use strict'; try {
+  function show(ico,t,m,dur){
+    const el = document.getElementById('toast');
+    document.getElementById('toast-ico').textContent = ico;
+    document.getElementById('toast-t').textContent = t;
+    document.getElementById('toast-m').textContent = m;
+    el.classList.add('show');
+    setTimeout(function(){ el.classList.remove('show'); }, dur || 3400);
+  }
+  const msgs = [
+    ['🗺️','6 roadmaps','From first line of Python to original research'],
+    ['⧉','One command','git clone and the whole curriculum is yours'],
+    ['🤝','Open seat','PRs welcome — become an early contributor'],
+  ];
+  let i = 0;
+  setTimeout(function(){ show.apply(null, msgs[i%msgs.length]); i++; }, 6000);
+  setInterval(function(){ show.apply(null, msgs[i%msgs.length]); i++; }, 24000);
+} catch(e){ console.error('[toast]', e); } })();
+</script>
+
+<script>
+/* active nav highlight */
+(function(){ 'use strict'; try {
+  const secs = document.querySelectorAll('section[id], header[id]');
+  const links = document.querySelectorAll('.nav-links a[href^="#"]');
+  const obs = new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(en.isIntersecting) links.forEach(function(a){ a.classList.toggle('live', a.getAttribute('href') === '#'+en.target.id); });
+    });
+  }, {threshold:.4});
+  secs.forEach(function(s){ obs.observe(s); });
+} catch(e){ console.error('[activenav]', e); } })();
 </script>
 
 </body>
