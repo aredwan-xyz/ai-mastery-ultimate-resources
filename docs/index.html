@@ -177,11 +177,11 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid 
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:all .3s}
 .nav.on{background:rgba(6,5,16,.9);backdrop-filter:blur(22px);border-bottom:1px solid var(--line);padding:10px 0}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{display:flex;align-items:center;gap:11px;font-family:var(--f-head);font-weight:800;font-size:1.1rem}
-.brand-orb{width:37px;height:37px;background:var(--g-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;box-shadow:0 4px 18px rgba(124,58,237,.45)}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--f-head);font-weight:800;font-size:1.1rem;white-space:nowrap;flex-shrink:0}
+.brand-orb{width:37px;height:37px;background:var(--g-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;box-shadow:0 4px 18px rgba(124,58,237,.45);flex-shrink:0}
 .brand-sub{font-size:.6rem;font-weight:500;color:var(--ink-2);display:block;line-height:1.2}
 .nav-links{display:flex;align-items:center;gap:2px}
-.nav-links a{padding:8px 13px;border-radius:var(--r1);font-size:.875rem;font-weight:500;color:var(--ink-2)}
+.nav-links a{padding:8px 13px;border-radius:var(--r1);font-size:.875rem;font-weight:500;color:var(--ink-2);white-space:nowrap}
 .nav-links a:hover,.nav-links a.live{color:var(--ink);background:rgba(255,255,255,.05)}
 .nav-cta{display:flex;align-items:center;gap:10px}
 .star-pill{display:inline-flex;align-items:center;gap:8px;padding:9px 17px;border-radius:var(--pill);background:rgba(255,255,255,.05);border:1.5px solid var(--line);font-size:.86rem;font-weight:700;transition:all .3s}
@@ -209,7 +209,9 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid 
   background-image:linear-gradient(rgba(139,92,246,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,.05) 1px,transparent 1px);
   background-size:56px 56px;
   mask-image:radial-gradient(ellipse 85% 65% at 50% 8%,black 0%,transparent 78%)}
-.hero-in{position:relative;z-index:1;text-align:center;max-width:900px;margin:0 auto}
+/* min-width:0 + width:100% — as a flex item of .hero it would otherwise refuse
+   to shrink below its content width, overflowing the viewport on small screens */
+.hero-in{position:relative;z-index:1;text-align:center;max-width:900px;width:100%;min-width:0;margin:0 auto}
 .hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.28);padding:8px 18px;border-radius:var(--pill);font-size:.8rem;font-weight:700;color:var(--violet-l);margin-bottom:28px}
 .hero-badge .pulse{width:7px;height:7px;background:var(--mint);border-radius:50%;animation:pulse 1.7s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(52,211,153,.5)}50%{opacity:.4;box-shadow:0 0 0 6px rgba(52,211,153,0)}}
