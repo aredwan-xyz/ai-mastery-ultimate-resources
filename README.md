@@ -991,6 +991,7 @@ Full project guides in [`projects/`](projects/)
 | **Import AI (Jack Clark)** | Research-focused | [importai.substack.com](https://importai.substack.com/) |
 | **AI Supremacy** | Business + technical | [aisupremacy.substack.com](https://aisupremacy.substack.com/) |
 | **Ahead of AI** | Sebastian Raschka | [magazine.sebastianraschka.com](https://magazine.sebastianraschka.com/) |
+| **AI Weekly** | Ranked expert signals across models, agents, funding, policy, and research | [aiweekly.co](https://aiweekly.co/) |
 | **AI Magic Mastery Weekly** | CodeBeez picks | [aimagicmastery.codebeez.ai/newsletter](https://aimagicmastery.codebeez.ai) |
 
 ### Podcasts
