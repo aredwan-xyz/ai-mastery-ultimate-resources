@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=AI%20Magic%20Mastery&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=35&desc=The%20Ultimate%20AI%20Learning%20Hub%20🧠✨&descAlignY=55&descSize=20" width="100%"/>
+<h1>AI Magic Mastery — Learning Resources</h1>
 
 <br/>
 
@@ -16,13 +16,12 @@
 <a href="https://github.com/aredwan-xyz/ai-mastery-ultimate-resources/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge&labelColor=0d0f26" alt="License"/>
 </a>
-<img src="https://img.shields.io/badge/Last%20Updated-2025-EC4899?style=for-the-badge&labelColor=0d0f26" alt="Updated 2025"/>
 <img src="https://img.shields.io/badge/PRs-Welcome-A78BFA?style=for-the-badge&labelColor=0d0f26" alt="PRs Welcome"/>
 
 <br/><br/>
 
-> **The most comprehensive, up-to-date, and well-structured AI learning repository on GitHub.**
-> Curated by **[Abid Redwan](https://github.com/aredwan-xyz)** · Built by **[CodeBeez](https://codebeez.ai)**
+> **AI learning roadmaps, references and project exercises.**
+> Curated by **[Abid Redwan](https://github.com/aredwan-xyz)** · **[CodeBeez](https://codebeez.xyz)**
 
 <br/>
 
@@ -31,7 +30,7 @@
 <br/>
 
 ```
-🧠  Worldwide learners  ·  500+ resources  ·  6 roadmaps  ·  Updated monthly
+🧠  Learning references  ·  6 roadmaps  ·  Project exercises
 ```
 
 </div>
@@ -42,19 +41,19 @@
 
 **AI Magic Mastery** is a free, open-source knowledge hub for everything Artificial Intelligence — from your very first `print("Hello, AI!")` to deploying production LLMs at scale. Whether you're a curious beginner, a software engineer making the switch, a researcher, or a startup founder — this is **your one-stop resource**.
 
-This repository is the companion to the [AI Magic Mastery learning platform](https://aimagicmastery.codebeez.ai) by **CodeBeez**, curated and maintained by **Abid Redwan**.
+Start here for structured self-study. For a complementary tools and research directory, use [CodeBeez Innovation Resources](https://github.com/aredwan-xyz/codebeez-innovation-resources). Links and suggested exercises are references; they do not establish that the maintainer has completed every course or deployed every listed system.
 
-### 🌟 Why This Repo Will Change Your AI Journey
+### Contents
 
 | Feature | Details |
 |---------|---------|
 | 🗺️ **6 Career Roadmaps** | Beginner → Expert, ML Engineer, LLM Specialist, AI Researcher, Prompt Engineer, AI Agent Builder |
-| 📚 **500+ Curated Resources** | Best courses, papers, books, tools, YouTube channels — hand-picked, no fluff |
+| 📚 **Learning References** | Courses, papers, books, tools and creator channels organized by topic |
 | 💡 **25+ Project Ideas** | From beginner to production, with tech stacks & starter hints |
 | 🎯 **Interview Prep** | ML/AI interview questions with clear, worked answers |
 | 📝 **Cheatsheets** | Quick-reference sheets for Python, PyTorch, TensorFlow, Prompting, LLMs |
 | 🔬 **Research Papers** | Most important AI papers with plain-English summaries |
-| 🛠️ **Tools Guide** | Every AI tool, framework, and platform you need to know |
+| 🛠️ **Tools Guide** | Selected tools, frameworks and platforms to explore |
 | 🤝 **Community** | Join the AI Magic Mastery community on Discord |
 
 ---
